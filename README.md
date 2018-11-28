@@ -24,11 +24,11 @@ src
 1. Buat folder Krama di komputer masing-masing
 2. Buka terminal, dan masuk ke folder Krama tadi
 3. Clone repository online ini ke dalam folder krama tadi, caranya:
-    a. bagi yang sudah setting ssh
+    >- bagi yang sudah setting ssh
     ```
         git clone git@gitlab.com:devs-hotel-management-system/front-end/front-end.git
     ```
-    b. bagi yang belum setting ssh
+    >- bagi yang belum setting ssh
     ```
         git clone https://gitlab.com/devs-hotel-management-system/front-end/front-end.git
     ```
@@ -44,12 +44,18 @@ src
     yang berwarna hijau adalah branch yang sudah ter-pull ke folder lokal kita, 
     yang berwarna merah adalah branch yang ada di repository online, pastikan diantara yang merah terdapat branch develop.
 6. Checkout ke branch develop untuk nge-pull folder dan file yang ada disana
+    ```
         git checkout develop
+    ```
     setelah kita lakukan perintah diatas, maka seluruh folder dan file di branch develop akan ada (muncul) di folder lokal kita.
 7. Pastikan apakah kita sudah ada di branch develop
+    ```
         git status
+    ```
 8. Buat branch baru sesuai dengan komponen yang kita kerjakan, misal komponen navbar, maka kita buat branch dengan nama component/navbar
+    ```
         git checkout -b component/navbar develop
+    ```
     maka semua folder dan file yang ada di branch develop akan ada juga di branch componen/navbar.
     hanya didalam branch componen/navbar dimana kita bisa memasukkan file navbar.html atau navbar.css.
     simpan file-file tersebut pada folder yang seharusnya. misal navbar.html disimpan di ./src/components, dll.
