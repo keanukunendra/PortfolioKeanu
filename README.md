@@ -1,64 +1,69 @@
-## Frontend Starter
+## Krama Front-end starter kit
+Stuktur folder ini adalah package folder untuk development front-end dengan menggunakan react.
+Mengapa kita menggunakan folder ini padahal kita masih belum implementasi ke react? Karena untuk memudahkan ketika nanti akan memigrasi pekerjaan kita yang asalnya html, css, dan javascript biasa ke react.
 
-### Cara pakai
-( File Preparation : Cuma perlu 1 orang untuk melakukan ini )
-1. Clone / Download as Zip repo ini
-2. Setelah di Download, Copy semua "isinya"
-3. Paste di Folder project kalian
-4. Install dependencies / package yang diperlukan oleh starter ini
-	 menggunakan `npm install`
-5. Setelah selesai tinggal push ke git masing - masing.
+Jadi di dalam package ini secara umum terdapat beberapa folder dengan struktur
 
-( Team Member )
-1. Clone repo project kalian
-2. run ``npm install``
-3. Lanjut ke running
+__public
+__src
+  |__components --> folder ini untuk komponen html kita, misal button.html, navbar.html
+     |__button.html
+     |__navbar.html
+  |__pages --> folder ini untuk html page kita, misal about.html, contact.html
+     |__about.html
+     |__contact.html
+  |__scss --> folder ini untuk menyimpan file .scss kita, didalamnya masih terdapat beberapa folder lagi
+     |__base --> untuk menyimpan style yang umum
+     |__components --> untuk menyimpan style per komponen
+     |__layout  --> untuk menyimpan style yang berkaitan dengan layout, seperti grid
+     |__pages  --> untuk menyimpan style yang khusus ada pada halaman tertentu
+     |__main.scss
 
-### Running
-Cara run starter ini :
-```    npm run start ```
->- Secara otomatis akan membuat server di [http://localhost:8080/](http://localhost:8080/).
->- Jika ada file yang kalian ganti dan di save, server akan secara otomatis ter-reload
-> dan webpack akan ngebundling file kalian
->- File - file yang perlu diganti hanya di folder src
 
-### Struktur folder
-```
-project
-│   README.md
-│   package.json    
-│   package-lock.json
-|   README.md
-|   stylelint.config.js
-|   webpack.config.js
-|   .babel.rc
-|   .eslint.rc
-|   .editorconfig
-|   .gitignore
-|   .postcss.config.js
-|   .prettier.config.js
-└───src
-│   │  index.html
-│   │  about.html
-|   |  index.js
-│   └───scss
-|       └───base
-|           |   _variable.scss   
-│       └───components   
-│           │   _button.scss
-│       └───layout
-|           |   _grid.scss
-|       └───pages
-|           |   _landing.scss
-|           |   _about.scss
-```
-### Tambah Package / Library
-1. Tambah package untuk development ( tidak diperlukan untuk production )
-```
-    npm install <nama package> --save-dev
- ```
-2. Tambah package library untuk assets ( diperlukan untuk production )
-```
-    npm i <nama package> --save
-```
-> Jangan run ``npm install`` menggunakan sudo (``sudo npm install``)  jika hanya untuk menginstall package per project ( menghindari error EPERM : Permissions Denied )
+## Petunjuk nge-push komponen masing-masing ke gitlab
+1. Buat folder Krama di komputer masing-masing
+2. Buka terminal, dan masuk ke folder Krama tadi
+3. Clone repository online ini ke dalam folder krama tadi, caranya:
+    a. bagi yang sudah setting ssh
+        git clone git@gitlab.com:devs-hotel-management-system/front-end/front-end.git
+    b. bagi yang belum setting ssh
+        git clone https://gitlab.com/devs-hotel-management-system/front-end/front-end.git
+4. Cek nama dan alamat repository kita apakah sudah benar dengan
+        git remote -v
+5. Cek sekarang ada di branch mana dan apakah branch develop ada dalam list branch kita
+        git branch -a
+    nanti akan muncul daftar branch kita, 
+    yang berwarna hijau adalah branch yang sudah ter-pull ke folder lokal kita, 
+    yang berwarna merah adalah branch yang ada di repository online, pastikan diantara yang merah terdapat branch develop.
+6. Checkout ke branch develop untuk nge-pull folder dan file yang ada disana
+        git checkout develop
+    setelah kita lakukan perintah diatas, maka seluruh folder dan file di branch develop akan ada (muncul) di folder lokal kita.
+7. Pastikan apakah kita sudah ada di branch develop
+        git status
+8. Buat branch baru sesuai dengan komponen yang kita kerjakan, misal komponen navbar, maka kita buat branch dengan nama component/navbar
+        git checkout -b component/navbar develop
+    maka semua folder dan file yang ada di branch develop akan ada juga di branch componen/navbar.
+    hanya didalam branch componen/navbar dimana kita bisa memasukkan file navbar.html atau navbar.css.
+    simpan file-file tersebut pada folder yang seharusnya. misal navbar.html disimpan di ./src/components, dll.
+    
+    Ingat!!!
+    Selalu pastikan di branch mana kita berada. Jika ingin mengerjakan button pastikan ada di branch component/button. jika ingin mengerjakan footer, pastikan ada di branch component/footer. 
+9. Jika kita sudah memasukan atau membuat perubahan di branch masing-masing, maka selanjutnya seperti biasanya,
+        git add .
+        git commit -m 'komen yang representatif'
+        git push origin branch_kamu 
+    
+    perhatikan!! Jangan sampai nge-push ke branch develop apalagi master. Jangan gunakan 
+        git push origin master, 
+        atau
+        git push origin develop,
+10. Buka lagi gitlabnya, pastikan branch kita sudah muncul dan file yang kita tambahkan sudah ada juga.
+
+Sementara sampai sini dan file kita insyaallah sudah aman di branch masing-masing.
+
+
+
+Tugas selanjutnya adalah mengerjakan page (halaman web kita). Tugas ini nantinya akan dibagi. 
+Misal yang kebagian mengerjakan homepage, maka perhatikan lagi komponen apa yang dibuthkan
+
+--> to be continued dilanjutin lagi nanti yaa
