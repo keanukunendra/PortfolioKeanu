@@ -21,38 +21,39 @@ src
 ```
 
 ## Petunjuk nge-push komponen masing-masing ke gitlab
-1. Buat folder Krama di komputer masing-masing
-2. Buka terminal, dan masuk ke folder Krama tadi
+1. Buat folder krama di komputer masing-masing
+2. Buka terminal, dan masuk ke folder krama tadi
 3. Clone repository online ini ke dalam folder krama tadi, caranya:
     >- bagi yang sudah setting ssh
     ```
-        git clone git@gitlab.com:devs-hotel-management-system/front-end/front-end.git
+        git clone git@gitlab.com:Binar-Satelite/Batam/Batch-1/team-a/frontend.git
     ```
     >- bagi yang belum setting ssh
     ```
-        git clone https://gitlab.com/devs-hotel-management-system/front-end/front-end.git
+        git clone https://gitlab.com/Binar-Satelite/Batam/Batch-1/team-a/frontend.git
     ```
-4. Cek nama dan alamat repository kita apakah sudah benar dengan
+4. Masuk ke folder frontend
+5. Cek nama dan alamat repository kita apakah sudah benar dengan
     ```
         git remote -v
     ```
-5. Cek sekarang ada di branch mana dan apakah branch develop ada dalam list branch kita
+6. Cek sekarang ada di branch mana dan apakah branch develop ada dalam list branch kita
     ```
         git branch -a
     ```
     nanti akan muncul daftar branch kita, 
     yang berwarna hijau adalah branch yang sudah ter-pull ke folder lokal kita, 
     yang berwarna merah adalah branch yang ada di repository online, pastikan diantara yang merah terdapat branch develop.
-6. Checkout ke branch develop untuk nge-pull folder dan file yang ada disana
+7. Checkout ke branch develop untuk nge-pull folder dan file yang ada disana
     ```
         git checkout develop
     ```
     setelah kita lakukan perintah diatas, maka seluruh folder dan file di branch develop akan ada (muncul) di folder lokal kita.
-7. Pastikan apakah kita sudah ada di branch develop
+8. Pastikan apakah kita sudah ada di branch develop
     ```
         git status
     ```
-8. Buat branch baru sesuai dengan komponen yang kita kerjakan, misal komponen navbar, maka kita buat branch dengan nama component/navbar
+9. Buat branch baru sesuai dengan komponen yang kita kerjakan, misal komponen navbar, maka kita buat branch dengan nama component/navbar
     ```
         git checkout -b component/navbar develop
     ```
@@ -62,7 +63,7 @@ src
     
     Ingat!!!
     Selalu pastikan di branch mana kita berada. Jika ingin mengerjakan button pastikan ada di branch component/button. jika ingin mengerjakan footer, pastikan ada di branch component/footer. 
-9. Jika kita sudah memasukan atau membuat perubahan di branch masing-masing, maka selanjutnya seperti biasanya,
+10. Jika kita sudah memasukan atau membuat perubahan di branch masing-masing, maka selanjutnya seperti biasanya,
     ```
         git add .
         git commit -m 'komen yang representatif'
@@ -72,8 +73,8 @@ src
     ```
         git push origin master, 
     ```
-        atau
-    ```
+    atau
+
         git push origin develop,
     ```
 10. Buka lagi gitlabnya, pastikan branch kita sudah muncul dan file yang kita tambahkan sudah ada juga.
