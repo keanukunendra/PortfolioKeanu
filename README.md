@@ -4,20 +4,20 @@ Mengapa kita menggunakan folder ini padahal kita masih belum implementasi ke rea
 
 Jadi di dalam package ini secara umum terdapat beberapa folder dengan struktur
 
-__public
-__src
-  |__components --> folder ini untuk komponen html kita, misal button.html, navbar.html
-     |__button.html
-     |__navbar.html
-  |__pages --> folder ini untuk html page kita, misal about.html, contact.html
-     |__about.html
-     |__contact.html
-  |__scss --> folder ini untuk menyimpan file .scss kita, didalamnya masih terdapat beberapa folder lagi
-     |__base --> untuk menyimpan style yang umum
-     |__components --> untuk menyimpan style per komponen
-     |__layout  --> untuk menyimpan style yang berkaitan dengan layout, seperti grid
-     |__pages  --> untuk menyimpan style yang khusus ada pada halaman tertentu
-     |__main.scss
+public
+src
+  components --> folder ini untuk komponen html kita, misal button.html, navbar.html
+    button.html
+    navbar.html
+  pages --> folder ini untuk html page kita, misal about.html, contact.html
+    about.html
+    contact.html
+  scss --> folder ini untuk menyimpan file .scss kita, didalamnya masih terdapat beberapa folder lagi
+    base --> untuk menyimpan style yang umum
+    components --> untuk menyimpan style per komponen
+    layout  --> untuk menyimpan style yang berkaitan dengan layout, seperti grid
+    pages  --> untuk menyimpan style yang khusus ada pada halaman tertentu
+    main.scss
 
 
 ## Petunjuk nge-push komponen masing-masing ke gitlab
