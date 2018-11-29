@@ -1,0 +1,77 @@
+*{    
+box-sizing: border-box;
+}
+body {
+    font-family: 'Open sans'; 
+}
+.login {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 7px;
+    margin: 75px 468px 60px;
+    width: 464px;
+    height: 625px;
+}
+.email-label {
+    text-align: center;
+    width: 144px;
+    height: 26px;
+    display: block;
+    color: #2F80ED;
+    font-size: 20px;
+    margin: 0 160px 23px;
+    padding-top: 55px;
+    
+}
+#email {
+    margin: 46px 37px 31px;
+    display: block;
+    width: 390px;
+    height: 69px;
+    Fill: Solid#FFFFFF;
+    border: solid #2F80ED 1px;
+    border-radius: 10px;
+    padding-bottom: 0;
+    font-size: 35px;
+    text-align: center;
+    
+}
+#pass {
+    margin: 24px 37px 30px;
+    display: block;
+    width: 390px;
+    height: 68.6px;
+    border: solid #2F80ED 1px;
+    border-radius: 10px;
+    font-size: 35px;
+    text-align: center;
+}
+.pass-label {
+    text-align: center;
+    width: 99px;
+    height: 26px;
+    display: block;
+    color: #2F80ED;
+    font-size: 20px;
+    margin: 0 182px 24px;
+}
+.forgot {
+    height: 25px;
+    width: 161px;
+    color: #2F80ED;
+    font-size: 18px;
+    text-align: center;
+    margin: 139px 151px 37px;
+
+}
+.btn {
+    color: white;
+    font-size: 20px;
+    background-color: dodgerblue;
+    display: block;
+    width: 213px;
+    height: 68px;
+    border-radius: 170px;
+    margin: 47px 125px 102px 125px;
+
+
+}
