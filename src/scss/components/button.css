@@ -1,0 +1,192 @@
+.btn-edit {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    background-color: #3D4FF1;
+    color: white;
+    border-radius: 5px;
+    width: 70px; height: 35px;
+    border: #3D4FF1;
+}
+
+.btn-remove {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    background-color: #FF5050;
+    color: white;
+    border-radius: 5px;
+    width: 70px; height: 35px;
+    border: #FF5050;
+}
+
+.btn-submit {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    background-color: #3D4FF1;
+    color: white;
+    border-radius: 5px;
+    width: 70px; height: 35px;
+    border: #3D4FF1;
+}
+
+.btn-cancel {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    background-color: #FF5050;
+    color: white;
+    border-radius: 5px;
+    width: 70px; height: 35px;
+    border: #FF5050;
+}
+
+.btn-plus {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    font-weight: 600;
+    background-color: #3D4FF1;
+    color: white;
+    border-radius: 5px;
+    width: 70px; height: 70px;
+    border: #3D4FF1;
+}
+
+.btn-browse {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    width: 70px; height: 35px;
+    border: black;
+    box-shadow: 0 2px 4px 0 rgba(47, 47, 47, 0.1);
+}
+
+.btn-emoticon {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    background-color: white;
+    border-radius: 5px;
+    width: 70px; height: 35px;
+    box-shadow: 0 2px 4px 0 rgba(47, 47, 47, 0.1);
+    border:#AEB6C3;
+}
+
+.btn-delete {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #FF5050;
+    color: white;
+    border-radius: 5px;
+    width: 70px; height: 35px;
+    border: #FF5050;
+}
+
+.btn-add-manner {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #3D4FF1;
+    color: white;
+    border-radius: 5px;
+    width: 560px; height: 35px;
+    border: #3D4FF1;
+}
+
+.btn-picture {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #3D4FF1;
+    color: white;
+    border-radius: 5px;
+    width: 560px; height: 35px;
+    border: #3D4FF1;
+}
+
+.btn-places {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    background-color: white;
+    box-shadow: 0 2px 4px 0 rgba(47, 47, 47, 0.1);
+    color: black;
+    border-radius: 5px;
+    width: 160px; height: 60px;
+    border:#AEB6C3;
+}
+
+.btn-events {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    background-color: white;
+    box-shadow: 0 2px 4px 0 rgba(47, 47, 47, 0.1);
+    color: black;
+    border-radius: 5px;
+    width: 160px; height: 60px;
+    border:#AEB6C3;
+}
+
+/* LINK STYLE */
+
+.btn-edit:hover {
+    background-color: rgb(21, 44, 247);
+    cursor: pointer;
+}
+
+.btn-remove:hover {
+    background-color: rgb(247, 29, 29);
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background-color: rgb(21, 44, 247);
+    cursor: pointer;
+}
+
+.btn-cancel:hover {
+    background-color: rgb(247, 29, 29);
+    cursor: pointer;
+}
+
+.btn-plus:hover {
+    background-color: rgb(21, 44, 247);
+    cursor: pointer;
+}
+
+.btn-browse:hover {
+    background-color: rgb(75, 75, 75);
+    cursor: pointer;
+}
+
+.btn-emoticon:hover {
+    cursor: pointer;
+}
+
+.btn-delete:hover {
+    background-color: rgb(247, 29, 29);
+    cursor: pointer;
+}
+
+.btn-add-manner:hover {
+    background-color: rgb(21, 44, 247);
+    cursor: pointer;
+}
+
+.btn-picture:hover {
+    background-color: rgb(21, 44, 247);
+    cursor: pointer;
+}
+
+.btn-places:hover {
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+
+.btn-events:hover {
+    background-color: whitesmoke;
+    cursor: pointer;
+}
