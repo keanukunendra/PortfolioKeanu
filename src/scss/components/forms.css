@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    background: #f8f8f8;
+}
+
+body {
+    margin: 20px 40px;
+}
+
+::placeholder {
+    color:#AEB6C3;
+}
+
+.label-culture-place-info {
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    color: #2F2F2F;
+}
+
+#form-name {
+    width: 240px;
+    height: 35px;
+    border-radius: 5px;
+    padding-left: 15px;
+    margin-top: 10px;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    background: white;
+    border:#AEB6C3;
+    box-shadow: 0 2px 4px 0 rgba(47, 47, 47, 0.1);
+    text-align: left;
+}
+
+#form-address {
+    width: 240px;
+    height: 35px;
+    border-radius: 5px;
+    padding-left: 15px;
+    margin-top: 10px;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    background: white;
+    border:#AEB6C3;
+    box-shadow: 0 2px 4px 0 rgba(47, 47, 47, 0.1);
+    text-align: left;
+}
+
+.label-title {
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    color: #2F2F2F;
+    font-weight: 600;
+}
+
+#form-story {
+    width: 560px;
+    height: 165px;
+    border-radius: 5px;
+    padding: 15px 15px 0;
+    margin-top: 10px;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    background: white;
+    border:#AEB6C3;
+    box-shadow: 0 2px 4px 0 rgba(47, 47, 47, 0.1);
+    text-align: justify;
+    line-height: 1.7;
+}
+
+.form-manners {
+    width: 500px;
+    height: 35px;
+    border-radius: 5px;
+    padding-left: 90px;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    background: white;
+    border:#AEB6C3;
+    box-shadow: 0 2px 4px 0 rgba(47, 47, 47, 0.1);
+    text-align: left;
+    margin-top: 10px;
+}
+
+.form-gallery {
+    width: 500px;
+    height: 35px;
+    border-radius: 5px;
+    padding-left: 90px;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    background: white;
+    border:#AEB6C3;
+    box-shadow: 0 2px 4px 0 rgba(47, 47, 47, 0.1);
+    text-align: left;
+    margin-top: 10px;
+}
+
+.btn-emoticon {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    background-color: white;
+    border-radius: 5px;
+    width: 70px; height: 35px;
+    box-shadow: 0 2px 4px 0 rgba(47, 47, 47, 0.1);
+    position: absolute;
+    border:#AEB6C3;
+    margin-top: 10px;
+}
+
+.btn-delete {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #FF5050;
+    color: white;
+    border-radius: 5px;
+    width: 70px; height: 35px;
+    border: #FF5050;
+    box-shadow: 0 2px 4px 0 rgba(47, 47, 47, 0.1);
+}
+
+.btn-add-manner {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #3D4FF1;
+    color: white;
+    border-radius: 5px;
+    width: 590px; height: 35px;
+    border: #3D4FF1;
+}
+
+.btn-browse {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    width: 70px; height: 35px;
+    border: black;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);
+    position: absolute;
+    margin-top: 10px;
+}
+
+.btn-emoticon:hover {
+    cursor: pointer;
+}
+
+.btn-delete:hover {
+    background-color: rgb(247, 29, 29);
+    cursor: pointer;
+}
+
+.btn-add-manner:hover {
+    background-color: rgb(21, 44, 247);
+    cursor: pointer;
+}
+
+.btn-browse:hover {
+    background-color: rgb(75, 75, 75);
+    cursor: pointer;
+}
