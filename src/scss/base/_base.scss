@@ -2,22 +2,19 @@
 
 html {
   font-family: $font;
+  color: $dark-grey;
+  background-color: $light-grey; 
 }
 
-.f1 {
-  font-weight: 400;
-  font-size: 64px;
-  line-height: 76px;
+.shadow {
+  box-shadow: 0 1px 4px 0 $dark-grey;
 }
 
-.f2 {
-  font-weight: 400;
-  font-size: 48px;
-  line-height: 56px;
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
-.f3 {
-  font-weight: 400;
-  font-size: 48px;
-  line-height: 56px;
+.icon {
+  font-size: 30px;
 }
