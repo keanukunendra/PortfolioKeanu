@@ -4,12 +4,12 @@ $font: 'Montserrat', sans-serif;  // safe-font
 
 // Color
 
-$blue : #3D4FF1;
-$light-blue : #5190EE;
-$soft-blue : #D3D6F7;
+$blue : hsl(234, 87%, 59%);
+$light-blue : hsl(216, 82%, 63%);
+$soft-blue : hsl(235, 69%, 90%);
 
-$red : #FF5050;
+$red : hsl(0, 100%, 66%);
 
-$dark-grey : #2F2F2F;
-$grey : #AEB6C3;
-$light-grey : #F8F8F8;
+$dark-grey : hsl(0, 0%, 18%);
+$grey : hsl(217, 15%, 72%);
+$light-grey : hsl(0, 0%, 95%);

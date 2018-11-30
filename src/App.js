@@ -1,28 +1,46 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import Card from './components/Card';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
+
+const App = () => {
+  return (
+    <div>
+      <Navbar />
+      <section id="hero">
+        <div className="section flex flex-center hero-img">
+          <div className="hero-text">Travel Like a Local</div>
+          <div className="hero-tab-wrapper">
+            <div className="hero-tab">Places</div>
+            <div className="hero-tab">Events</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="catalogue">
+        <div className='section margin-top margin-bottom'>
+          <div className="container">
+            <div>
+            <h2 className="f2 title">Destination</h2>
+            </div>
+            <div className="container flex flex-space-between">
+              <Card />
+              <Card />
+              <Card />
+              <Card />
+              <Card />
+              <Card />
+              <Card />
+              <Card />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <Footer />
+  </div>
+  )
 }
 
 export default App;

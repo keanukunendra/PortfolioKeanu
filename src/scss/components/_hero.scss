@@ -1,0 +1,46 @@
+#hero {
+  height: 100vh;
+}
+
+.hero-img {
+  background: linear-gradient(0deg, rgba(61, 79, 241, .5), rgba(255, 255, 255, 0)) ,url("../assets/img/beach-bora-bora-clouds-753626.png");
+  height: 100%;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  position: absolute;
+  font-weight: 800;
+  font-size: 96px;
+  color: white;
+}
+
+.hero-tab-wrapper {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+}
+
+.hero-tab {
+  font-weight: 600;
+  font-size: 24px;
+  color: white;
+  text-align: center;
+  box-sizing: border-box;
+  width: 320px;
+  padding: 24px 0;
+  border-top: 2px solid white;
+  cursor: pointer;
+  &:hover {
+    background-color: hsla(0, 0%, 100%, 0.3);
+    border-top: 4px solid white;
+  }
+  &:active {
+    border-top: 4px solid white;
+  }
+}
+
+
