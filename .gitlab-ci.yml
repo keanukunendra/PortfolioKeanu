@@ -1,0 +1,44 @@
+image: node:latest
+
+stages:
+    - build
+    - staging
+    - production
+    
+build:
+    type: build
+    script:
+     - npm install
+     - npm run build
+    
+    except:
+     - master
+     - develop
+     
+deploy-staging:
+    type: deploy 
+    stage: staging
+    only:
+     - develop
+    environment:
+     name: staging
+     url: https://$HEROKU_STAGING_APP.$APP_DOMAIN  
+    script:
+     - apt-get update -qy
+     - apt-get install -y ruby ruby-dev rubygems-integration
+     - gem install dpl
+     - dpl --provider=heroku --app=$HEROKU_STAGING_APP --api-key=$HEROKU_API_KEY
+     
+deploy-production:
+    type: deploy 
+    stage: production
+    only:
+     - master
+    environment:
+     name: production
+     url: https://$HEROKU_PRODUCTION_APP.$APP_DOMAIN  
+    script:
+     - apt-get update -qy
+     - apt-get install -y ruby ruby-dev rubygems-integration
+     - gem install dpl
+     - dpl --provider=heroku --app=$HEROKU_PRODUCTION_APP --api-key=$HEROKU_API_KEY
