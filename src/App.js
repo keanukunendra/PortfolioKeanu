@@ -1,25 +1,13 @@
 import React from 'react';
-import CardImage from './assets/img/jembatan-barelang.png'
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import Card from './components/Card';
+
 
 const App = () => {
   return (
     <div>
-      <div className="section navbar shadow">
-        <div className="flex flex-space-between">
-          <div className="logo">
-            <a href="#Logo">KRAMA</a>
-          </div>
-          <div className="navigation flex flex-space-between">
-            <a href="#Home" className="menu">Home</a>
-            <a href="#About" className="menu">About Us</a>
-            <a href="#Contact" className="menu">Contact Us</a>
-          </div>
-          <div className="search">
-            <i className='bx bx-search-alt bx-sm bx-tada'></i>
-          </div>
-        </div>
-      </div>
-
+      <Navbar />
       <section id="hero">
         <div className="section flex flex-center hero-img">
           <div className="hero-text">Travel Like a Local</div>
@@ -37,111 +25,20 @@ const App = () => {
             <h2 className="f2 title">Destination</h2>
             </div>
             <div className="container flex flex-space-between">
-              <div className="card shadow f5">
-                <img className="card-img-top" src={CardImage} alt="Jembatan Balerang" />
-                <div className="card-body">
-                  <h5 className="card-title">Jembatan Balerang jaya maju mundur</h5>
-                  <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
-                  Some quick example text to build on the card title and make up the bulk of the card's content.
-                  </p>
-                  <div className="card-link"><a href="#description">Read More</a></div>
-                </div>
-              </div>
-              <div className="card shadow f5">
-                <img className="card-img-top" src={CardImage} alt="Jembatan Balerang" />
-                <div className="card-body">
-                  <h5 className="card-title">Jembatan Balerang jaya maju mundur</h5>
-                  <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
-                  Some quick example text to build on the card title and make up the bulk of the card's content.
-                  </p>
-                  <div className="card-link"><a href="#description">Read More</a></div>
-                </div>
-              </div>
-              <div className="card shadow f5">
-                <img className="card-img-top" src={CardImage} alt="Jembatan Balerang" />
-                <div className="card-body">
-                  <h5 className="card-title">Jembatan Balerang jaya maju mundur</h5>
-                  <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
-                  Some quick example text to build on the card title and make up the bulk of the card's content.
-                  </p>
-                  <div className="card-link"><a href="#description">Read More</a></div>
-                </div>
-              </div>
-              <div className="card shadow f5">
-                <img className="card-img-top" src={CardImage} alt="Jembatan Balerang" />
-                <div className="card-body">
-                  <h5 className="card-title">Jembatan Balerang jaya maju mundur</h5>
-                  <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
-                  Some quick example text to build on the card title and make up the bulk of the card's content.
-                  </p>
-                  <div className="card-link"><a href="#description">Read More</a></div>
-                </div>
-              </div>
-              <div className="card shadow f5">
-                <img className="card-img-top" src={CardImage} alt="Jembatan Balerang" />
-                <div className="card-body">
-                  <h5 className="card-title">Jembatan Balerang jaya maju mundur</h5>
-                  <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
-                  Some quick example text to build on the card title and make up the bulk of the card's content.
-                  </p>
-                  <div className="card-link"><a href="#description">Read More</a></div>
-                </div>
-              </div>
-              <div className="card shadow f5">
-                <img className="card-img-top" src={CardImage} alt="Jembatan Balerang" />
-                <div className="card-body">
-                  <h5 className="card-title">Jembatan Balerang jaya maju mundur</h5>
-                  <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
-                  Some quick example text to build on the card title and make up the bulk of the card's content.
-                  </p>
-                  <div className="card-link"><a href="#description">Read More</a></div>
-                </div>
-              </div>
-              <div className="card shadow f5">
-                <img className="card-img-top" src={CardImage} alt="Jembatan Balerang" />
-                <div className="card-body">
-                  <h5 className="card-title">Jembatan Balerang jaya maju mundur</h5>
-                  <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
-                  Some quick example text to build on the card title and make up the bulk of the card's content.
-                  </p>
-                  <div className="card-link"><a href="#description">Read More</a></div>
-                </div>
-              </div>
-              <div className="card shadow f5">
-                <img className="card-img-top" src={CardImage} alt="Jembatan Balerang" />
-                <div className="card-body">
-                  <h5 className="card-title">Jembatan Balerang jaya maju mundur</h5>
-                  <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
-                  Some quick example text to build on the card title and make up the bulk of the card's content.
-                  </p>
-                  <div className="card-link"><a href="#description">Read More</a></div>
-                </div>
-              </div>
-
+              <Card />
+              <Card />
+              <Card />
+              <Card />
+              <Card />
+              <Card />
+              <Card />
+              <Card />
             </div>
           </div>
         </div>
       </section>
 
-      <footer id="footer">
-        <div className="section flex flex-space-between footer">
-          <div className="footer-left">
-            <ul>
-              <li className="logo-krama"><a href="#Homepage">KRAMA</a></li>
-              <li className="supported">Supported by Glints Academy and Binar</li>
-            </ul>
-          </div>
-          <div className="footer-right">
-            <ul>
-              <li><a href="#Homepage">Home</a></li>
-              <li><a href="#LoginAdmin">Login Admin</a></li>
-              <li><a href="#About">About</a></li>
-              <li><a href="#ContactUs">Contact Us</a></li>
-            </ul>
-          </div>
-        </div>
-      </footer>
-
+      <Footer />
   </div>
   )
 }
