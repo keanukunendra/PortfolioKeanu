@@ -1,17 +1,20 @@
-//import variabel
+//import variable & base style
 @import
-  'base/variable';
+  'base/variable',
+  'base/normalize',
+  'base/reset',
+  'base/base',
+  'components/typography';
 
 //import komponen
 @import
-  'components/button',
-  'components/typography';
+  'components/navbar',
+  'components/hero', 
+  'components/card',
+  'components/footer';
 
 //import layout
 @import
   'layout/grid';
 
 //import style halaman
-@import
-  'pages/about',
-  'pages/landing';

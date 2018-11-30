@@ -1,7 +1,28 @@
-.container{
-    display:block;
-    padding:0 25px;
+.section {
+    display: block;
+    padding: 0 80px;
+    position: relative;
+    &.margin-top {
+      padding-top: 60px;
+    }
+    &.margin-bottom {
+      padding-bottom: 80px;
+    }
 }
-.grid{
-    display:flex;
+
+.flex {
+    display: flex;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  &.flex-center {
+    justify-content: center;
+    align-items: center;  
+  }
+  &.flex-space-between {
+    justify-content: space-between;
+    align-items: center;
+  }
 }
