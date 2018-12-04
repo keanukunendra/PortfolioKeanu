@@ -1,0 +1,76 @@
+.box-rules-flex {
+  display: flex;
+  justify-content: center;
+}
+
+.box-rules {
+  display: flex;
+  flex-flow: column nowrap;
+  box-shadow: 0 4px 6px 0 rgba(47, 47, 47, 0.1);
+  border:#AEB6C3;
+  width: 920px;
+  height: 260px;
+  padding: 0 100px;
+  border-radius: 10px;
+  background: white;
+  opacity: 0.9;
+}
+
+.box-rules-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 40px 0 20px;
+}
+
+.icon-flex {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  width: 200px;
+  padding-bottom: 40px;
+}
+
+.icon-flex i {
+  width: 25px; height: 25px;
+}
+
+.box-rules-icon {
+  box-shadow: 0 2px 4px 0 rgba(47, 47, 47, 0.1);
+  border:#AEB6C3;
+}
+
+.box-rules-line {
+  border: solid 1px gainsboro;
+}
+
+.box-rules-p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  border-top: solid 4px gainsboro;
+  margin: 30px 0;
+  padding: 40px 0;
+}
+
+.box-hover-blue {
+  transition-duration: 0.5s;
+  color: blue;
+  transition-property: color, background;
+}
+
+.box-hover-blue:hover {
+  background: #3D4FF1;
+  color: white;    
+}
+
+.box-hover-red {
+  transition-duration: 0.5s;
+  color: red;
+  transition-property: color, background;
+}
+
+.box-hover-red:hover {
+  background: #3D4FF1;
+  color: white;    
+}

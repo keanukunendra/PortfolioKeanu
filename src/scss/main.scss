@@ -11,7 +11,12 @@
   'components/navbar',
   'components/hero', 
   'components/card',
-  'components/footer';
+  'components/footer',
+  'components/box-rules';
+
+//import pages
+@import
+  'pages/description-page';
 
 //import layout
 @import
