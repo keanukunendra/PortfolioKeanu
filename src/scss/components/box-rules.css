@@ -1,80 +1,73 @@
 * {
-    box-sizing: border-box;
-}
-.box {
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-    width: 1196px;
-    height: 418px;
-    font-family: 'Open sans';
-    position: relative;
-}
-.title {
-    width: 431px;
-    height: 44px;
-    font-family: 'Montserrat';
-    margin-bottom: 32px;
-    margin-left: 121px;
-    font-style: SemiBold;
-}
-.icon {
-    width: 240px;
-    height: 80px;
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-left: 121px;    
-}
-.box-icon1:hover {
-    width: 80px;
-    height: 80px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
-    margin-right: 20px;
-    background: #3D4FF1;
-    
-}
-.box-icon2:hover {
-    width: 80px;
-    height: 80px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
-    margin-right: 20px;
-    background:#3D4FF1 ;
-}
-.box-icon3:hover {
-    width: 80px;
-    height: 80px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;  
-    margin-right: 20px;
-    background: #3D4FF1;
-}
-.box-icon4:hover {
-    width: 80px;
-    height: 80px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 10px; 
-    background: #3D4FF1;
-}
-.icon1 {
-    width: 50px;
-    height: 50px;
-    margin: 15px;
+    margin: 0;
+    padding: 0;
 }
 
-.line {
-    width: 954px;
-    box-align: center;
-    color: solid 2px grey;
-    margin-top: 41px;
-    
+.box-rules-flex {
+    display: flex;
+    justify-content: center;
 }
-.satu {
+
+.box-rules {
+    display: flex;
+    flex-flow: column nowrap;
+    box-shadow: 0 4px 6px 0 rgba(47, 47, 47, 0.1);
+    border:#AEB6C3;
+    width: 600px;
+    height: 300px;
+    padding: 0 100px;
+    border-radius: 10px;
+}
+
+.box-rules-title {
+    font-family: 'Montserrat', sans-serif;
     font-size: 24px;
-    font-family: 'Montserrat';
-    font-style: SemiBold;
-    text-align: justify-content;
-    margin: 40px 121px 72px;
+    font-weight: 600;
+    padding: 40px 0 20px;
 }
 
+.icon-flex {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 200px;
+    padding-bottom: 40px;
+}
 
+.box-rules-icon {
+    box-shadow: 0 2px 4px 0 rgba(47, 47, 47, 0.1);
+    border:#AEB6C3;
+}
+
+.box-rules-line {
+    border: solid 1px gainsboro;
+}
+
+.box-rules-p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 40px;
+}
+
+.box-hover-blue {
+    transition-duration: 0.5s;
+    color: blue;
+    transition-property: color, background;
+}
+
+.box-hover-blue:hover {
+    background: #3D4FF1;
+    color: white;    
+}
+
+.box-hover-red {
+    transition-duration: 0.5s;
+    color: red;
+    transition-property: color, background;
+}
+
+.box-hover-red:hover {
+    background: #3D4FF1;
+    color: white;    
+}
