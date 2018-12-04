@@ -1,0 +1,69 @@
+.head{
+    background-color: white;
+}
+#hero{
+    background: url('../assets/img/header1.jpg');
+    margin-top: 64px;
+    height: 620px;
+    opacity: 0.6;
+}
+
+#hero .quote-about{
+    color: white;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 600;
+    max-width: 800px;
+}
+
+.smile{
+    display: flex;
+    padding:  20px 10%;
+    flex-direction: row;
+}
+
+.smile:nth-child(even) p{
+    order:-1;
+}
+.smile .img-box {
+    flex:1 0 30%;
+    padding: 50px 20px;
+    height: 200px;
+    border: 1px solid $blue;
+    img {
+        margin: 0 auto;
+    }
+}   
+
+.smile p{
+    flex:1 0 70%;
+    padding: 65px 20px;
+    height: 200px;
+    background-color: $blue;
+    color: white;
+    font-size: 18px;
+}
+
+
+p.header{
+    font-size: 50px;
+    text-align: center;
+}
+
+p.description{
+    font-size: 18px;
+    font-weight: 600;
+    max-width: 800px;
+    text-align: center;
+}
+
+.profile {
+    background-color: white;
+    img{
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        border: 1px solid $blue;
+        margin: 50px 10px;
+    }
+}
