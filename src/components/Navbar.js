@@ -1,16 +1,16 @@
 import React from 'react';
+import { Link, NavLink } from 'react-router-dom';
 
 const Navbar = () => {
   return (
     <div className="section navbar shadow">
       <div className="flex flex-space-between">
         <div className="logo">
-          <a href="#Logo">KRAMA</a>
+          <Link to='/'>KRAMA</Link>
         </div>
         <div className="navigation flex flex-space-between">
-          <a href="#Home" className="menu">Home</a>
-          <a href="#About" className="menu">About Us</a>
-          <a href="#Contact" className="menu">Contact Us</a>
+          <NavLink to='/' className="menu">Home</NavLink>
+          <NavLink to='/about' className="menu">About</NavLink>
         </div>
         <div className="search">
           <i className='bx bx-search-alt bx-sm bx-tada'></i>
