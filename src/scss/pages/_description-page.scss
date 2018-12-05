@@ -1,0 +1,59 @@
+.page-description-flex {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.content-description {
+  display: flex;
+}
+
+.description-flex {
+  display: flex;
+  position: relative;
+  top: 100px;
+}
+
+.pd-destination {
+  margin-bottom: 20px;
+}
+
+.pd-place {
+  margin-bottom: 20px;
+}
+
+.pd-address {
+  margin-bottom: 20px;
+}
+
+.img-pd {
+  background: url('../assets/img/borobudur.png');
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  display: flex;
+  flex-flow: nowrap column;
+  height: 700px;
+  position: relative;
+  top: 100px;
+}
+
+.boxrules-pd {
+  position: relative;
+  top: -80px;
+}
+
+.pd-story {
+  font-family: 'Montserrat', sans-serif;
+  text-align: justify;
+  margin: 0 40px;
+}
+
+.pd-story-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.pd-story-desc {
+  line-height: 1.5;
+  margin-bottom: 80px;
+}
