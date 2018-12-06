@@ -1,18 +1,17 @@
 import React, { Component } from 'react';
-import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import Catalogue from '../components/Catalogue';
-import Footer from '../components/Footer';
+import { Route } from 'react-router-dom';
 
 class Home extends Component {
   render() {
+    const { path } = this.props.match;
+
     return (
-    <div>
-      <Navbar />
-      <Hero />
-      <Catalogue />
-      <Footer />
-    </div>
+        <div>
+          <Hero />
+          <Route path='/:path_id' component={Catalogue} />            
+        </div>
     )
   }
 

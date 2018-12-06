@@ -9,7 +9,7 @@ const Navbar = () => {
           <Link to='/'>KRAMA</Link>
         </div>
         <div className="navigation flex flex-space-between">
-          <NavLink to='/' className="menu">Home</NavLink>
+          <NavLink to='/home' className="menu">Home</NavLink>
           <NavLink to='/about' className="menu">About</NavLink>
         </div>
         <div className="search">

@@ -13,7 +13,7 @@ const Footer = () => {
         </div>
         <div className="footer-right">
           <ul>
-            <NavLink to="/"><li><a href="#Homepage">Home</a></li></NavLink>
+            <NavLink to="/"><li>Home</li></NavLink>
             <li><a href="#LoginAdmin">Login Admin</a></li>
             <li><a href="#About">About</a></li>
             <li><a href="#ContactUs">Contact Us</a></li>
