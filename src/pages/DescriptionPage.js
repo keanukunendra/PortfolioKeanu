@@ -8,7 +8,7 @@ import borobudurImg from '../assets/img/borobudur.png';
 const DescriptionPage = () => {
     return (
       <div className="page-description-flex">
-        <Navbar />
+        {/* <Navbar /> */}
 
         <section className="description-flex">
 
@@ -36,7 +36,7 @@ const DescriptionPage = () => {
 
         </section>
 
-        <Footer />
+        {/* <Footer /> */}
       </div>
     );
 }

@@ -1,69 +1,116 @@
-.head{
-    background-color: white;
-}
-#hero{
-    background: url('../assets/img/header1.jpg');
-    margin-top: 64px;
-    height: 620px;
-    opacity: 0.6;
+.head {
+  background-color: white;
 }
 
-#hero .quote-about{
-    color: white;
-    text-align: center;
-    font-size: 36px;
-    font-weight: 600;
-    max-width: 800px;
+.header1 {
+  background: url('../assets/img/header1.jpg');
+  margin-top: 64px;
+  height: 620px;
 }
 
-.smile{
-    display: flex;
-    padding:  20px 10%;
-    flex-direction: row;
+.header1 .quote-about {
+  color: white;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 600;
+  max-width: 800px;
 }
 
-.smile:nth-child(even) p{
-    order:-1;
-}
-.smile .img-box {
-    flex:1 0 30%;
-    padding: 50px 20px;
-    height: 200px;
-    border: 1px solid $blue;
-    img {
-        margin: 0 auto;
-    }
-}   
-
-.smile p{
-    flex:1 0 70%;
-    padding: 65px 20px;
-    height: 200px;
-    background-color: $blue;
-    color: white;
-    font-size: 18px;
+p.header2 {
+  font-size: 50px;
+  text-align: center;
+  text-shadow: 3px 3px #26A69A;
 }
 
-
-p.header{
+p.header3 {
     font-size: 50px;
     text-align: center;
-}
+    padding: 50px 0 0;
+    text-shadow: 3px 3px #26A69A;
+  }
 
-p.description{
-    font-size: 18px;
-    font-weight: 600;
-    max-width: 800px;
-    text-align: center;
+p.description {
+  font-size: 18px;
+  
+  max-width: 800px;
+  text-align: center;
 }
 
 .profile {
-    background-color: white;
-    img{
-        border-radius: 50%;
-        width: 150px;
-        height: 150px;
-        border: 1px solid $blue;
-        margin: 50px 10px;
-    }
+  img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin: 10px 50px;
+    align-items: center;
+  }
+}
+
+.box-icon {
+  position: relative;
+  bottom: 30%;
+  margin: 50px;
+  background-color: white;
+  width: 300px;
+  height: 350px;
+  box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.2);
+
+  .icon-etiquette {
+    padding: 30px 100px 10px 100px;
+  }
+
+  .icon-prohib {
+    padding: 30px 110px 20px 110px;
+  }
+
+  .icon-explore {
+    padding: 50px 85px 30px 85px;
+  }
+}
+
+.icontext {
+  text-align: justify;
+
+  .title {
+    font-weight: bold;
+    font-family: 'Montserrat'sans-serif;
+    font-size: 20px;
+    padding: 10px 0 0 0;
+    text-shadow: 3px 3px #26A69A;
+    text-align: center;
+  }
+
+  .descrip {
+    padding: 0 20px;
+    color: black;
+  }
+}
+
+.aboutkrama {
+  padding: 50px 0 200px 0;
+}
+
+.test {
+  background-color: #26A69A;
+  height: 330px;
+}
+
+.ourprofile {
+  padding: 20px;
+  
+}
+
+.cardprofile{
+    padding: 15px;
+}
+
+.card1{
+    height: 300px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.cardbody{
+    text-align: center;
+    background-color: #26A69A;
+    color: white;
 }
