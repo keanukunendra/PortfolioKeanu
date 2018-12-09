@@ -2,13 +2,13 @@
   background-color: white;
 }
 
-.header1 {
+.header-img {
   background: url('../assets/img/header1.jpg');
   margin-top: 64px;
   height: 620px;
 }
 
-.header1 .quote-about {
+.header-img .quote-about {
   color: white;
   text-align: center;
   font-size: 36px;
@@ -16,22 +16,19 @@
   max-width: 800px;
 }
 
-p.header2 {
+p.header-aboutus {
   font-size: 50px;
   text-align: center;
-  text-shadow: 3px 3px #26A69A;
 }
 
-p.header3 {
+p.header-team {
     font-size: 50px;
     text-align: center;
     padding: 50px 0 0;
-    text-shadow: 3px 3px #26A69A;
   }
 
 p.description {
   font-size: 18px;
-  
   max-width: 800px;
   text-align: center;
 }
@@ -54,6 +51,7 @@ p.description {
   width: 300px;
   height: 350px;
   box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
 
   .icon-etiquette {
     padding: 30px 100px 10px 100px;
@@ -76,7 +74,6 @@ p.description {
     font-family: 'Montserrat'sans-serif;
     font-size: 20px;
     padding: 10px 0 0 0;
-    text-shadow: 3px 3px #26A69A;
     text-align: center;
   }
 
@@ -87,11 +84,11 @@ p.description {
 }
 
 .aboutkrama {
-  padding: 50px 0 200px 0;
+  padding: 50px 0 150px 0;
 }
 
-.test {
-  background-color: #26A69A;
+.cardkrama {
+  background-color: $blue;
   height: 330px;
 }
 
@@ -111,6 +108,6 @@ p.description {
 
 .cardbody{
     text-align: center;
-    background-color: #26A69A;
+    background-color: $blue;
     color: white;
 }
