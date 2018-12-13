@@ -1,14 +1,15 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
   return (
     <div className="section navbar shadow">
       <div className="flex flex-space-between">
         <div className="logo">
-          <a href="#Logo">KRAMA</a>
+          <NavLink to="/">KRAMA</NavLink>
         </div>
         <div className="navigation flex flex-space-between">
-          <a href="#Home" className="menu">Home</a>
+        <NavLink to="/" className="menu">Home</NavLink>
           <a href="#About" className="menu">About Us</a>
           <a href="#Contact" className="menu">Contact Us</a>
         </div>
