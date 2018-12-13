@@ -35,10 +35,14 @@
   cursor: pointer;
   &:hover {
     background-color: hsla(0, 0%, 100%, 0.3);
-    border-top: 4px solid white;
+    // border-top: 4px solid white;
   }
   &:active {
     border-top: 4px solid white;
+    pointer-events: none;
+    background: rgba(255,255,255,0.5);
+    outline: none;
+    box-sizing: border-box;
   }
 }
 

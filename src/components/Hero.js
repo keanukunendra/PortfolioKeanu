@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 class Hero extends Component {
   state = {
@@ -9,11 +9,11 @@ class Hero extends Component {
   render() {
     const categoryButton = this.state.categories.map(category => {
       return (
-        <Link to={'/home/' + category} key={category}>
+        <NavLink to={'/home/' + category} key={category}>
           <div className="hero-tab">{category}</div>
-        </Link>
+        </NavLink>
       )
-    })
+    });
 
     return (
       <section id="hero">
@@ -21,8 +21,6 @@ class Hero extends Component {
           <div className="hero-text">Travel Like a Local</div>
           <div className="hero-tab-wrapper">
             {categoryButton}
-            {/* <div className="hero-tab" onClick={ this.handleClick }>Places</div>
-            <div className="hero-tab" onClick={ this.handleClick }>Events</div> */}
           </div>
         </div>
       </section>

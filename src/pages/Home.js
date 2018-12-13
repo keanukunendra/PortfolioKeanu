@@ -8,10 +8,11 @@ class Home extends Component {
     const { path } = this.props.match;
 
     return (
-        <div>
-          <Hero />
-          <Route path='/:path_id' component={Catalogue} />            
-        </div>
+      <div>
+        <Hero />
+        <Route exact path={path} component={Catalogue} />
+        <Route path={path + '/:path_id'} component={Catalogue} />
+      </div>
     )
   }
 
