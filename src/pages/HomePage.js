@@ -26,13 +26,15 @@ const HomePage = () => {
             </div>
             <div className="container flex flex-space-between">
               <NavLink to="/description"><Card /></NavLink>
-              <Card />
-              <Card />
-              <Card />
-              <Card />
-              <Card />
-              <Card />
-              <Card />
+              <NavLink to="/description"><Card /></NavLink>
+              <NavLink to="/description"><Card /></NavLink>
+              <NavLink to="/description"><Card /></NavLink>
+              <NavLink to="/description"><Card /></NavLink>
+              <NavLink to="/description"><Card /></NavLink>
+              <NavLink to="/description"><Card /></NavLink>
+              <NavLink to="/description"><Card /></NavLink>
+              <NavLink to="/description"><Card /></NavLink>
+              <NavLink to="/description"><Card /></NavLink>
             </div>
           </div>
         </div>
