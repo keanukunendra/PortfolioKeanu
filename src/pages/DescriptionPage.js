@@ -3,12 +3,10 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import BoxRules from '../components/BoxRules';
 
-import borobudurImg from '../assets/img/borobudur.png';
-
 const DescriptionPage = () => {
     return (
       <div className="page-description-flex">
-        <Navbar />
+        {/* <Navbar /> */}
 
         <section className="description-flex">
 
@@ -36,7 +34,7 @@ const DescriptionPage = () => {
 
         </section>
 
-        <Footer />
+        {/* <Footer /> */}
       </div>
     );
 }
