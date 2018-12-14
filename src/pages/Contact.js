@@ -15,11 +15,11 @@ const Contact = () => {
             <section id="form">
             <div className="wrap2" >
                 <div className="title"> 
-                    <p className="detail">Connect with us:<br />For support or any questions <br />
-                    Email us at <br /> <a className="link" href="https://binar.co.id/">kedaiglints@gmail.com</a> </p>
+                    <p className="detail">Connect with us:<br />For support or any questions <br /> do not hesitate <br />
+                    Email us at <br /> <a className="link" href="https://gmail.com">kramabudaya.batam@gmail.com</a> </p>
                 </div>
                 <div >
-                    <p className="detail2">Krama Yogyakarta<br />Jl. Damai No.89, Wonorejo, Sariharjo, Ngaglik, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55581</p>
+                    <p className="detail2">Krama Yogyakarta<br />Jl. Damai No.89, Wonorejo, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55581</p>
                 </div>
                 <div >
                     <p className="detail3">Krama Batam<br />Jl. Hang Lekiu No.KM 2, Sambau, Nongsa, Kota Batam, Kepulauan Riau 29465</p>
@@ -31,7 +31,7 @@ const Contact = () => {
             <div className="wrap-form">
                 <h1>Get in Touch</h1>
                 <h3>Please fill out the form and we will get connected</h3>
-                <form className="contact-form" action="https://formspree.io/kedaiglints@gmail.com" method="POST">
+                <form className="contact-form" action="https://formspree.io/kramabudaya.batam@gmail.com" method="POST">
                     <div><input name="name" 
                         className="name" 
                         type="text" 
