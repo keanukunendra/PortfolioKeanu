@@ -8,48 +8,23 @@ class Catalogue extends Component {
     cards: []
   }
   
-  // function to GET data from API using axios
-  fetchData(){
-    const category = this.props.match.params.path_id
-    console.log(category)
-    if (category === undefined) {
-      axios.get('https://staging-krama.herokuapp.com/api/v1/places')
-      .then(res => {
-        this.setState(() => ({
-            id: category,
-            cards: res.data.slice(0, 8)
-          }))
-          console.log(res)
-        })
-      } else {
-        axios.get('https://staging-krama.herokuapp.com/api/v1/' + category)
-        .then(res => {
-          this.setState({
-            id: category,
-            cards: res.data.slice(0, 8)
-          })
-          console.log(res)
-        })
-      }
-    }
-    
-    // GET from API after all the DOM is rendered
-    componentDidMount() {
-      this.fetchData()  
-    }
-    
-    componentWillMount() {
-      this.unlisten = this.props.history.listen((location, action) => {
-        console.log("on route change");
-        this.fetchData();
+  // GET from API after all the DOM is rendered
+  componentDidMount() {
+    console.log('component did mount');
+    console.log('-------------------')
+
+    const category = this.props.match.params.path_id;
+    axios.get('https://staging-krama.herokuapp.com/api/v1/places')
+    .then(res => {
+      this.setState(() => ({
+          id: category,
+          cards: res.data.slice(0, 8)
+        }))
       });
-    }
-    
-    componentWillUnmount() {
-        this.unlisten();
-    }
+  }
     
   render(){
+    console.log('render');
     const { cards } = this.state;
 
     // render element using array
@@ -57,8 +32,7 @@ class Catalogue extends Component {
       cards.map(card => {
         return (
           // if response is OK and JSON is stored in this.state, which means length > 0
-          // {/* <Card title={card.title_place} desc={card.desc_place} key={card.id} /> */}  // use this for real API Krama
-          <Card title={card.name} desc={card.email} key={card.id} />  // use this just for testing
+          <Card title={card.title} desc={card.desc} key={card.id} />
         )
       })
     ) : (
@@ -74,13 +48,27 @@ class Catalogue extends Component {
             <h2 className="f2 title">Destination</h2>
             </div>
             <div className="container flex flex-space-between">
-              {/* render Card List */}
               {cardList}
             </div>
           </div>
         </div>
       </section>
     )
+  }
+
+  componentDidUpdate(prevProps, prevState, snapshot) {
+    console.log('component did update');
+    console.log('-------------------')
+    if (prevProps.match.params.path_id !== this.props.match.params.path_id) {
+      const category = this.props.match.params.path_id;
+      axios.get('https://staging-krama.herokuapp.com/api/v1/' + category)
+      .then(res => {
+        this.setState({
+          id: category,
+          cards: res.data.slice(0, 8)
+        })
+      })
+    }
   }
 }
 
