@@ -1,6 +1,4 @@
 import React from 'react';
-// import Navbar from '../components/Navbar';
-// import Footer from '../components/Footer';
 import { Card, CardImg, CardTitle, CardSubtitle, CardBody } from 'reactstrap';
 import Image1 from '../assets/img/hand.svg';
 import Image2 from '../assets/img/nocam.svg';
