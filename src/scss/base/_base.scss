@@ -1,5 +1,7 @@
 // Definisikan style umum
-
+*{
+  box-sizing: border-box;
+}
 html {
   font-family: $font;
   color: $dark-grey;
