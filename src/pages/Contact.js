@@ -1,12 +1,9 @@
 import React from 'react';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
 
 
 const Contact = () => {
   return (
     <div>
-      <Navbar />
         <div className="img">
             <h1 className="text-img">contact krama</h1>
             <h2>We'd love to hear you shout</h2>
@@ -56,7 +53,6 @@ const Contact = () => {
                 </form> 
             </div>      
         </div>
-      <Footer />
   </div>
   )
 }

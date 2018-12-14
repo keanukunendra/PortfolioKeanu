@@ -67,6 +67,7 @@ class Catalogue extends Component {
           id: category,
           cards: res.data.slice(0, 8)
         })
+        console.log(res)
       })
     }
   }

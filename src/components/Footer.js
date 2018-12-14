@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="section flex flex-space-between footer">
         <div className="footer-left">
           <ul>
-            <li className="logo-krama"><a href="#Homepage">KRAMA</a></li>
+            <li className="logo-krama"><NavLink to="/">KRAMA</NavLink></li>
             <li className="supported">Supported by Glints Academy and Binar</li>
           </ul>
         </div>
