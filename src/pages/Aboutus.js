@@ -1,5 +1,6 @@
 import React from 'react';
 import { Card, CardImg, CardTitle, CardSubtitle, CardBody } from 'reactstrap';
+
 import Image1 from '../assets/img/hand.svg';
 import Image2 from '../assets/img/nocam.svg';
 import Image3 from '../assets/img/place.svg';
