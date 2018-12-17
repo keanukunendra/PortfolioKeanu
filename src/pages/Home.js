@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
+import { Route } from 'react-router-dom';
+
 import Hero from '../components/Hero';
 import Catalogue from '../components/Catalogue';
-import { Route } from 'react-router-dom';
 
 class Home extends Component {
   render() {
