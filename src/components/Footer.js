@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-const Footer = () => {
 
+const Footer = () => {
   return (
     <footer id="footer">
       <div className="section flex flex-space-between footer">
@@ -13,10 +13,15 @@ const Footer = () => {
         </div>
         <div className="footer-right">
           <ul>
-            <NavLink to="/"><li>Home</li></NavLink>
-            <li><a href="#LoginAdmin">Login Admin</a></li>
-            <li><a href="#About">About</a></li>
-            <li><a href="#ContactUs">Contact Us</a></li>
+            <li>
+              <NavLink to="/" className="site-map">Home</NavLink>
+            </li>
+            <li>
+              <NavLink to="/about" className="site-map">About</NavLink>
+            </li>
+            <li>
+              <NavLink to="/contact" className="site-map">Contact Us</NavLink>
+            </li>
           </ul>
         </div>
       </div>

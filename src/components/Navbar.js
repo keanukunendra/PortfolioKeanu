@@ -11,6 +11,7 @@ const Navbar = () => {
         <div className="navigation flex flex-space-between">
           <NavLink to='/home' className="menu">Home</NavLink>
           <NavLink to='/about' className="menu">About</NavLink>
+          <NavLink to='/contact' className="menu">Contact</NavLink>
         </div>
         <div className="search">
           <i className='bx bx-search-alt bx-sm bx-tada'></i>
