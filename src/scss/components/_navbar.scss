@@ -7,7 +7,7 @@
   z-index: 100;
   background-color: white;
   .logo {
-    font-family: 'Roboto Slab', serif;
+    font-family: "Roboto Slab", serif;
     font-size: 36px;
     flex-basis: 15%;
   }
@@ -16,10 +16,9 @@
     .menu {
       text-align: center;
       width: 120px;
-      padding: 24px 10px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      padding: 22px 10px;
+      box-sizing: border-box;
+      border-bottom: 4px solid transparent;
       &:hover {
         border-bottom: 4px solid $blue;
       }
