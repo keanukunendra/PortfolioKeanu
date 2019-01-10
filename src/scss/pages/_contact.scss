@@ -1,120 +1,110 @@
-* {
-    margin: 0;
-}
 .img {
-    background-image: url("../assets/img/borobudur.png");
-    width: 80;
-    height: 60vh;
-    background-position: bottom;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-top: 64px;
+  background-image: url("../assets/img/borobudur.png");
+  width: 80;
+  height: 60vh;
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 64px;
+  .text-img {
+      text-align: center;
+      text-transform: uppercase;
+      color: white;
+      padding: 100px 100px 0 100px;
+      font-size: 70px;
+      letter-spacing: 0.5rem;
+  }
+  h2 {
+      text-align: center;
+      text-transform: uppercase;
+      color: white;
+      letter-spacing: 0.2rem;
+      margin-top: 40px;
+  }
 }
-.text-img {
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
-    color: white;
-    padding: 100px 100px 0 100px;
-    font-size: 70px;
-    letter-spacing: 0.5rem;
-}
-h2 {
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
-    color: white;
-    letter-spacing: 0.2rem;
-    margin-top: 40px;
-}
-.first-wrap {
-    display: flex;
-}
-.sec-wrap {
-    margin: 40px;
-}
+
 #form {
-    padding: 50px 20px;
-    margin: 0;
+  padding: 50px 20px;
+  margin: 0;
 }
 .name {
-    width: 340px;
-    height: 40px;
-    margin-bottom: 20px;
-    padding: 5px;
-    border: 1px solid grey;
-    border-radius: 4px;
-    font-size: 17px;
-    text-align: auto;
+  width: 340px;
+  height: 40px;
+  margin-bottom: 20px;
+  padding: 5px;
+  border: 1px solid grey;
+  border-radius: 4px;
+  font-size: 17px;
+  text-align: auto;
 }
-h1 {
+#message {
+  width: 340px;
+  height: 70px;
+  padding: 5px;
+  border: 1px solid grey;
+  border-radius: 4px;
+  font-size: 17px;
+}
+.btn-submit {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  background-color: #3D4FF1;
+  color: white;
+  border-radius: 5px;
+  width: 70px; height: 35px;
+  border: #3D4FF1;
+  margin-top: 50px;
+}
+.contact-form {
+  margin-top: 30px;
+}
+.wrap-form {
+  border: 3px;
+  border-radius: 7px;
+  padding: 100px 200px 100px 400px;
+  background-color: white;
+  h1 {
     color: black;
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 20px;
     font-size: 34px;
-}
-h3 {
+  }
+  h3 {
     color: black;
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 10px;
     margin-top: 15px;
-}
-#message {
-    width: 340px;
-    height: 70px;
-    padding: 5px;
-    border: 1px solid grey;
-    border-radius: 4px;
-    font-size: 17px;
-}
-.btn-submit {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 12px;
-    font-weight: 600;
-    background-color: #3D4FF1;
-    color: white;
-    border-radius: 5px;
-    width: 70px; height: 35px;
-    border: #3D4FF1;
-    margin-top: 50px;
-}
-.contact-form {
-    margin-top: 30px;
-}
-.wrap-form {
-    border: 3px;
-    border-radius: 7px;
-    padding: 100px 200px 100px 400px;
-    background-color: white;
+  }
 }
 .title {
-    color: black;
-    font-family: 'Montserrat', sans-serif;
+  color: black;
+  font-family: 'Montserrat', sans-serif;
 }
 .detail {
-    color: black;
-    font-family: 'Montserrat', sans-serif;
-    margin: 40px;
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  margin: 40px;
 }
 .detail2 {
-    color: black;
-    font-family: 'Montserrat', sans-serif;
-    margin: 40px;
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  margin: 40px;
 }
 .detail3 {
-    color: black;
-    font-family: 'Montserrat', sans-serif;
-    margin: 40px;
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  margin: 40px;
 }
 .wrap2 {
-    margin: 0 ;
-    padding-right: 170px;
-    padding-left: 170px;
-    display: flex;
-    justify-content: space-between;
-    font-size: 18px;
+  margin: 0 ;
+  padding-right: 170px;
+  padding-left: 170px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
 }
 .link {
-    color: #3D4FF1;
+  color: #3D4FF1;
 }
 

@@ -1,38 +1,22 @@
-import React from 'react';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
-import Card from '../components/Card';
-import Hero from '../components/Hero'
+import React, { Component } from 'react';
+import { Route } from 'react-router-dom';
 
-const Home = () => {
-  return (
-    <div>
-      <Navbar />
-      <Hero />
+import Hero from '../components/Hero';
+import Catalogue from '../components/Catalogue';
 
-      <section id="catalogue">
-        <div className='section margin-top margin-bottom'>
-          <div className="container">
-            <div>
-            <h2 className="f2 title">Destination</h2>
-            </div>
-            <div className="container flex flex-space-between">
-              <Card />
-              <Card />
-              <Card />
-              <Card />
-              <Card />
-              <Card />
-              <Card />
-              <Card />
-            </div>
-          </div>
-        </div>
-      </section>
+class Home extends Component {
+  render() {
+    const { path } = this.props.match;
 
-      <Footer />
-  </div>
-  )
+    return (
+      <div>
+        <Hero />
+        <Route exact path={path} component={Catalogue} />
+        <Route path={path + '/:path_id'} component={Catalogue} />
+      </div>
+    )
+  }
+
 }
-
+  
 export default Home;

@@ -3,7 +3,12 @@
 }
 
 .hero-img {
-  background: linear-gradient(0deg, rgba(61, 79, 241, .5), rgba(255, 255, 255, 0)) ,url("../assets/img/beach-bora-bora-clouds-753626.png");
+  background: linear-gradient(
+      0deg,
+      rgba(61, 79, 241, 0.5),
+      rgba(255, 255, 255, 0)
+    ),
+    url("../assets/img/beach-bora-bora-clouds-753626.png");
   height: 100%;
   background-position: top;
   background-repeat: no-repeat;
@@ -15,6 +20,9 @@
   font-weight: 800;
   font-size: 96px;
   color: white;
+  @include md {
+    font-size: 48px;
+  }
 }
 
 .hero-tab-wrapper {
@@ -39,7 +47,9 @@
   }
   &:active {
     border-top: 4px solid white;
+    pointer-events: none;
+    background: rgba(255, 255, 255, 0.5);
+    outline: none;
+    box-sizing: border-box;
   }
 }
-
-
