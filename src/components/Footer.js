@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -12,7 +12,7 @@ const Footer = () => {
           </ul>
         </div>
         <div className="second-left">
-          <a href="#">Available On<br/><i class='bx bxl-play-store bx-md'></i></a>
+          <Link to="#">Available On<br/><i class='bx bxl-play-store bx-md'></i></Link>
         </div>
         <div className="footer-social">
           <ul>
