@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 
+//using mailgun and emailjs libary to get the feedback backend-less
+//check public/index.html to see the dependency script
 class ContactForm extends Component {
   state = {
       nama:'',
@@ -33,13 +35,13 @@ class ContactForm extends Component {
       this.setState({
         feedback: event.target.value
       });
-      console.log(this.state)
+      // console.log(this.state)
   }
   
   handleSubmit(event) {
       event.preventDefault();
     
-      this.sendFeedback(
+      this.sendFeedback(      
           'senderform',
           this.state.nama,
           this.state.email,
@@ -51,12 +53,12 @@ class ContactForm extends Component {
         this.setState({
           formSubmitted: true
         });
-        this.formReset()
+        this.formReset() //calling the function of reset form
   }
 
-  sendFeedback(templateId, senderName, senderEmail, receiverEmail, feedback) {
+  sendFeedback(templateId, senderName, senderEmail, receiverEmail, feedback) {  //set the feedback contain as the library we have create 
       window.emailjs
-          .send('gmail', templateId, {
+          .send('gmail', templateId, { //this function order should be same as the libary we've set
               senderName,
               senderEmail,
               receiverEmail,
@@ -70,7 +72,7 @@ class ContactForm extends Component {
           .catch(err => console.error('Failed to send feedback. Error: ', err));
   }
 
-  formReset(){
+  formReset(){  //to reset the form after submitted
     this.setState({
       nama:'',
       email:'',
@@ -138,7 +140,7 @@ render() {
               />
             </div>
             <div><br/>
-              {this.state.formSubmitted ? submitted : null}
+              {this.state.formSubmitted ? submitted : null}   {/* setting the condition of submiting the form */}
               <button className="btn-submit" type="submit" value="submit">submit</button>
             </div>
             <input type="hidden" name="_next" value="http://krama-budaya.herokuapp.com/" />
