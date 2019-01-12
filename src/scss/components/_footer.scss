@@ -3,6 +3,7 @@
   width: 100%;
   background-image: url('../assets/img/Rectangle.png'), url('../assets/img/full-bloom.png');
   background-blend-mode: multiply;
+  position: relative;
   .footer-left {
     margin: 40px;
     .logo-krama {
@@ -14,6 +15,31 @@
       font-family: $font;
       color: white;
       font-size: 12px;
+    }
+  }
+  .second-left {
+    color: white;
+    font-size: 12px;
+    margin-top: 20px;
+  }
+  .second-left i {
+    margin: 10px;
+    margin-left: 0;
+    color: white;
+    
+  }
+  .footer-social {
+    color: white;
+    list-style-type: none;
+    font-size: 12px;
+    margin: 25px;
+    padding-bottom: 15px;
+    ul li {
+      margin-top: 1px;
+      padding-bottom: 3px;
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
   .footer-right {
