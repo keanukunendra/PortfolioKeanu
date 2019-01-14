@@ -92,13 +92,16 @@ p.description {
     font-weight: bold;
     font-family: 'Montserrat'sans-serif;
     font-size: 20px;
-    padding: 10px 0 0 0;
+    padding: 10px 100px 10px 0;
     text-align: center;
   }
 
   .descrip {
-    padding: 0 20px;
+    padding: 15px 20px;
     color: black;
+  }
+  @include md{
+    text-align: center;
   }
 }
 
@@ -134,4 +137,5 @@ p.description {
     text-align: center;
     background-color: $blue;
     color: white;
+    padding: 5px 10px 10px 10px;
 }
