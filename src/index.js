@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './scss/main.scss';
-import App from './App';
+import AboutUs from './pages/Aboutus';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<AboutUs />, document.getElementById('root'));
