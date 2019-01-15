@@ -81,11 +81,15 @@ span {
 .title {
   color: black;
   width: 400px;
+  @include lga{
+    // padding: 0 20px;
+    width: 300px
+  }
 }
 .detail {
   color: black;
-  margin: 40px;
-  
+  margin: 30px;
+ 
 }
 .link {
   color: #3D4FF1;

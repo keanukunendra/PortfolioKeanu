@@ -58,7 +58,7 @@ class ContactForm extends Component {
 
   sendFeedback(templateId, senderName, senderEmail, receiverEmail, feedback) {  //set the feedback contain as the library
       window.emailjs
-          .send('gmail', templateId, { //this function order should be same as the libary we've set
+          .send('gmail', templateId, { //this function order should be same as the libary set up
               senderName,
               senderEmail,
               receiverEmail,
@@ -97,10 +97,10 @@ render() {
               Email us at <br /> <a className="link" href="https://gmail.com">kramabudaya.batam@gmail.com</a> </p>
             </div>
             <div className="title" >
-              <p className="detail"><span>We are here</span><br/> Krama Yogyakarta<br /> Jl. Damai No.89 Daerah Istimewa Yogyakarta 55581</p>
+              <p className="detail" id="detail2"><span>We are here</span><br/> Krama Yogyakarta<br /> Jl. Damai No.89 Daerah Istimewa Yogyakarta 55581</p>
             </div>
             <div className="title">
-              <p className="detail"><span>We also here</span><br/> Krama Batam<br /> Jl. Hang Lekiu No.2 Kepulauan Riau 29465</p>
+              <p className="detail"><span>We also here</span><br/> Krama Batam<br /> Jl. Hang Lekiu No.2 Batam, Kepulauan Riau 29465</p>
             </div>
         </section>  
       </div>
