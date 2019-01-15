@@ -35,8 +35,11 @@ class Catalogue extends Component {
   }
 
   render() {
-    const { cards } = this.state;
-    const category = this.state.id === undefined ? "places" : this.state.id;
+    const { id, cards } = this.state;
+    const category =
+      this.state.id === undefined
+        ? "Places"
+        : id.replace(/^\w/, c => c.toUpperCase());
 
     // render element using array
     const cardList = cards.length ? (
@@ -56,12 +59,10 @@ class Catalogue extends Component {
     return (
       <section id="catalogue">
         <div className="section margin-top margin-bottom">
-          <div className="container">
-            <div>
-              <h2 className="f2 title">Destination</h2>
-            </div>
-            <div className="container flex flex-space-between">{cardList}</div>
+          <div>
+            <h2 className="f2 title">{category}</h2>
           </div>
+          <div className="flex flex-space-between">{cardList}</div>
         </div>
       </section>
     );

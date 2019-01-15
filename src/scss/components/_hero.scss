@@ -1,5 +1,8 @@
 #hero {
   height: 100vh;
+  @include sm {
+    height: 70vh;
+  }
 }
 
 .hero-img {
@@ -23,12 +26,18 @@
   @include md {
     font-size: 48px;
   }
+  @include sm {
+    font-size: 24px;
+  }
 }
 
 .hero-tab-wrapper {
   position: absolute;
   bottom: 0;
   display: flex;
+  @include sm {
+    width: 100%;
+  }
 }
 
 .hero-tab {
@@ -41,15 +50,17 @@
   padding: 24px 0;
   border-top: 2px solid white;
   cursor: pointer;
+  transition: all 0.2s ease-in;
   &:hover {
+    background-color: hsla(0, 0%, 100%, 0.3);
+  }
+  &.active {
     background-color: hsla(0, 0%, 100%, 0.3);
     border-top: 4px solid white;
   }
-  &:active {
-    border-top: 4px solid white;
-    pointer-events: none;
-    background: rgba(255, 255, 255, 0.5);
-    outline: none;
-    box-sizing: border-box;
+  @include sm {
+    width: 100%;
+    font-size: 12px;
+    padding: 12px 0;
   }
 }
