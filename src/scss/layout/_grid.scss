@@ -11,6 +11,9 @@
   @include sm {
     padding: 0 10px;
   }
+  @include md {
+    padding: 0 40px;
+  }
 }
 
 .flex {
