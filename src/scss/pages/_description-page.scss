@@ -61,6 +61,9 @@
     margin: 0 40px 30px; 
   }
   @include md {
+    margin: 0 40px 30px;
+  }
+  @include sm {
     margin: 0 0 30px;
   }
 }
@@ -72,6 +75,9 @@
     margin: 0 40px 30px; 
   }
   @include md {
+    margin: 0 40px 30px;
+  }
+  @include sm {
     margin: 0 0 30px;
   }
 }
