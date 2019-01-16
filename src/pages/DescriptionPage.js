@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import BoxRules from "../components/BoxRules";
-import ControlledCarousel from "../components/ControlledCarousel";
+import ControlledCarousel from "../components/ControlledCarousel" ;
+import { listContext } from "../App";
 
 class DescriptionPage extends Component {
   render() {
@@ -23,7 +24,7 @@ class DescriptionPage extends Component {
                 </section>
 
                 <section>
-                  <div className="img-pd" />
+                  <ControlledCarousel pictureplaces={data.pictureplaces} />
                   <div className="boxrules-pd">
                     <BoxRules rules={data.rules} />
                   </div>

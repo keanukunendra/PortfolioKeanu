@@ -1,3 +1,102 @@
+.nav {
+  height: 50px;
+  width: 100%;
+  background-color: white;
+  position: relative;
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  padding: 15px 0;
+  font-family: "Roboto Slab", serif;
+  font-size: 36px;  
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  position: relative;
+  left: 52%;
+  bottom: 15%;
+  font-size: 18px;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 15px 10px 17px 10px;
+  text-decoration: none;
+  text-align: center;
+  width: 120px;
+  box-sizing: border-box;
+  border-bottom: 4px solid transparent;
+  outline: none;
+  transition: all 0.3s ease-in;
+  &:hover {
+    border-bottom: 4px solid rgba($blue, 0.7);
+  }
+  &.active {
+    border-bottom: 4px solid $blue;
+  }
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+@media (max-width:600px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid;
+  }
+  .nav > .nav-links {
+    position: fixed;
+    display: block;
+    width: 100%;
+    background-color: white;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+    text-align: center;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) + .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked + .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}
+
 .navbar {
   position: fixed !important;
   top: 0;
@@ -28,12 +127,15 @@
         border-bottom: 4px solid $blue;
       }
     }
-  }
-  .search {
-    flex-basis: 15%;
-    text-align: end;
-    @include md {
+    @include sm {
       display: none;
     }
   }
+  // .search {
+  //   flex-basis: 15%;
+  //   text-align: end;
+  //   @include md {
+  //     display: none;
+  //   }
+  // }
 }
