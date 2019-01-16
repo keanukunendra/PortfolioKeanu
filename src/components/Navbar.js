@@ -19,9 +19,6 @@ const Navbar = () => {
             Contact
           </NavLink>
         </div>
-        <div className="search">
-          <i className="bx bx-search-alt bx-sm bx-tada" />
-        </div>
       </div>
     </div>
   );

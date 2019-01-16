@@ -1,68 +1,62 @@
 import React, { Component } from "react";
-import axios from "axios";
+import { Link } from "react-router-dom";
 
 import Card from "../components/Card";
-import { Link } from "react-router-dom";
+import { listContext } from "../App";
 
 class Catalogue extends Component {
   state = {
-    cards: []
+    category: ""
   };
 
-  // GET from API after all the DOM is rendered
   componentDidMount() {
     const category = this.props.match.params.path_id;
-    axios.get("https://staging-krama.herokuapp.com/api/v1/places").then(res => {
-      this.setState(() => ({
-        id: category,
-        cards: res.data.slice(0, 8)
-      }));
+    this.setState({
+      category
     });
   }
 
-  componentDidUpdate(prevProps, prevState, snapshot) {
+  componentDidUpdate(prevProps) {
     if (prevProps.match.params.path_id !== this.props.match.params.path_id) {
       const category = this.props.match.params.path_id;
-      axios
-        .get("https://staging-krama.herokuapp.com/api/v1/" + category)
-        .then(res => {
-          this.setState({
-            id: category,
-            cards: res.data.slice(0, 8)
-          });
-        });
+      this.setState({
+        category
+      });
     }
   }
 
   render() {
-    const { id, cards } = this.state;
     const category =
-      this.state.id === undefined
-        ? "Places"
-        : id.replace(/^\w/, c => c.toUpperCase());
-
-    // render element using array
-    const cardList = cards.length ? (
-      cards.map(card => {
-        return (
-          // if response is OK and JSON is stored in this.state, which means length > 0
-          <Link to={`/description/${category}/${card.id}`} key={card.id}>
-            <Card title={card.title} desc={card.desc} />
-          </Link>
-        );
-      })
-    ) : (
-      // if response is error show this message instead
-      <div>Loading Page...</div>
-    );
+      this.state.category === undefined ? "places" : this.state.category;
 
     return (
       <section id="catalogue">
         <div className="section margin-top margin-bottom">
           <div>
-            <h2 className="f2 title">{category}</h2>
+            <h2 className="f2 title">
+              {category.replace(/^\w/, c => c.toUpperCase())}
+            </h2>
           </div>
-          <div className="flex flex-space-between">{cardList}</div>
+          <div className="flex flex-space-between">
+            <listContext.Consumer>
+              {context =>
+                context.list ? (
+                  context.list.map(item => {
+                    return (
+                      <Link
+                        to={`/description/${category}/${item.id}`}
+                        key={item.id}
+                      >
+                        <Card title={item.title} desc={item.desc} />
+                      </Link>
+                    );
+                  })
+                ) : (
+                  <div>Loading Page...</div>
+                )
+              }
+            </listContext.Consumer>
+          </div>
         </div>
       </section>
     );

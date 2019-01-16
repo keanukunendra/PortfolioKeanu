@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
 
+import { listContext } from "../App";
+
 class Hero extends Component {
   state = {
     categories: ["places", "events"]
@@ -9,9 +11,17 @@ class Hero extends Component {
   render() {
     const categoryButton = this.state.categories.map(category => {
       return (
-        <NavLink className="hero-tab" to={"/home/" + category} key={category}>
-          <div>{category}</div>
-        </NavLink>
+        <listContext.Consumer key={category}>
+          {context => (
+            <NavLink
+              className="hero-tab"
+              to={"/home/" + category}
+              onClick={() => context.updateCategory(category)}
+            >
+              <div>{category}</div>
+            </NavLink>
+          )}
+        </listContext.Consumer>
       );
     });
 
