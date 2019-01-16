@@ -127,6 +127,9 @@
         border-bottom: 4px solid $blue;
       }
     }
+    @include sm {
+      display: none;
+    }
   }
   // .search {
   //   flex-basis: 15%;
