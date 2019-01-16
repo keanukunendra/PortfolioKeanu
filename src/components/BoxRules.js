@@ -1,18 +1,9 @@
 import React, { Component } from "react";
-import axios from "axios";
 
 class BoxRules extends Component {
   state = {
-    iconRules: [],
     hover: false
   };
-
-  componentDidMount() {
-    axios.get("http://staging-krama.herokuapp.com/api/v1/rules").then(res => {
-      const iconRules = res.data.slice(2, 6);
-      this.setState({ iconRules });
-    });
-  }
 
   hoverOn = i => {
     this.setState({ hover: i });
@@ -23,17 +14,17 @@ class BoxRules extends Component {
   };
 
   render() {
-    const { iconRules } = this.state;
+    const { rules } = this.props;
     return (
       <div>
         <div className="box-rules-flex">
           <div className="box-rules">
             <div className="box-rules-title">What you should know</div>
             <div className="icon-flex">
-              {iconRules.map((iconRule, index) => (
+              {rules.map((rule, index) => (
                 <i
-                  className={iconRule.img}
-                  alt={iconRule.desc}
+                  className={rule.img}
+                  alt={rule.desc}
                   onMouseOver={() => this.hoverOn(index)}
                   onMouseOut={this.hoverOff}
                   key={index}
@@ -42,10 +33,8 @@ class BoxRules extends Component {
             </div>
 
             <div className="icon-rules-line">
-              {iconRules.map((iconRule, index) => (
-                <p key={index}>
-                  {this.state.hover === index ? iconRule.desc : ""}
-                </p>
+              {rules.map((rule, index) => (
+                <p key={index}>{this.state.hover === index ? rule.desc : ""}</p>
               ))}
             </div>
 
@@ -62,3 +51,5 @@ class BoxRules extends Component {
 }
 
 export default BoxRules;
+
+

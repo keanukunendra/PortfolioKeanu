@@ -1,68 +1,45 @@
-import React from "react";
+import React, { Component } from "react";
 import BoxRules from "../components/BoxRules";
+import ControlledCarousel from "../components/ControlledCarousel";
 
-const DescriptionPage = () => {
-  return (
-    <div className="page-description-flex">
-      <section className="description-flex">
-        <div className="section content-description">
-          <div className="f3 pd-destination">Destination</div>
-          <div className="f2 pd-place">Candi Borobudur</div>
-          <div className="f4 pd-address">
-            <i className="bx-fw bx bx-navigation" />
-            Jalan Raya Borobudur, Jawa Tengah
-          </div>
-        </div>
-      </section>
+class DescriptionPage extends Component {
+  render() {
+    const id = this.props.match.params.item_id;
+    return (
+      <listContext.Consumer>
+        {context =>
+          context.list.map(data =>
+            data.id.toString() === id ? (
+              <div className="page-description-flex" key={id}>
+                <section className="description-flex">
+                  <div className="section content-description">
+                    <div className="f3 pd-destination">Destination</div>
+                    <div className="f2 pd-place">{data.title}</div>
+                    <div className="f4 pd-address">
+                      <i className="bx-fw bx bx-navigation" />
+                      {data.address}
+                    </div>
+                  </div>
+                </section>
 
-      <section>
-        <div className="img-pd" />
-        <div className="boxrules-pd">
-          <BoxRules />
-        </div>
-      </section>
+                <section>
+                  <div className="img-pd" />
+                  <div className="boxrules-pd">
+                    <BoxRules rules={data.rules} />
+                  </div>
+                </section>
 
-      <section className="section pd-story">
-        <div className="pd-story-title">Story</div>
-        <div className="pd-story-desc">
-          There are many variations of passages of Lorem Ipsum available, but
-          the majority have suffered alteration in some form, by injected
-          humour, or randomised words which don't look even slightly believable.
-          If you are going to use a passage of Lorem Ipsum, you need to be sure
-          there isn't anything embarrassing hidden in the middle of text. All
-          the Lorem Ipsum generators on the Internet tend to repeat predefined
-          chunks as necessary, making this the first true generator on the
-          Internet. It uses a dictionaryof over 200 Latin words, combined with a
-          handful of model sentence structures, to generate Lorem Ipsum which
-          looks reasonable. The generated Lorem Ipsum is therefore always free
-          from repetition, injected humour, or non-characteristic words etc.
-          There are many variations of passages of Lorem Ipsum available, but
-          the majority have suffered alteration in some form, by injected
-          humour, or randomised words which don't look even slightly believable.
-          If you are going to use a passage of Lorem Ipsum, you need to be sure
-          there isn't anything embarrassing hidden in the middle of text.
-          <br />
-          <br />
-          There are many variations of passages of Lorem Ipsum available, but
-          the majority have suffered alteration in some form, by injected
-          humour, or randomised words which don't look even slightly believable.
-          If you are going to use a passage of Lorem Ipsum, you need to be sure
-          there isn't anything embarrassing hidden in the middle of text. All
-          the Lorem Ipsum generators on the Internet tend to repeat predefined
-          chunks as necessary, making this the first true generator on the
-          Internet. It uses a dictionaryof over 200 Latin words, combined with a
-          handful of model sentence structures, to generate Lorem Ipsum which
-          looks reasonable. The generated Lorem Ipsum is therefore always free
-          from repetition, injected humour, or non-characteristic words etc.
-          There are many variations of passages of Lorem Ipsum available, but
-          the majority have suffered alteration in some form, by injected
-          humour, or randomised words which don't look even slightly believable.
-          If you are going to use a passage of Lorem Ipsum, you need to be sure
-          there isn't anything embarrassing hidden in the middle of text.
-        </div>
-      </section>
-    </div>
-  );
-};
+                <section className="section pd-story">
+                  <div className="pd-story-title">Story</div>
+                  <div className="pd-story-desc">{data.desc}</div>
+                </section>
+              </div>
+            ) : null
+          )
+        }
+      </listContext.Consumer>
+    );
+  }
+}
 
 export default DescriptionPage;

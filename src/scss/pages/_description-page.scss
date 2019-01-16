@@ -1,3 +1,5 @@
+@import "node_modules/react-image-gallery/styles/scss/image-gallery.scss";
+
 .page-description-flex {
   display: flex;
   flex-flow: column wrap;
@@ -25,31 +27,34 @@
   margin-bottom: 20px;
 }
 
-.img-pd {
-  background: url('../assets/img/borobudur.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 700px;
-  display: flex;
-  flex-flow: nowrap column;
-  position: relative;
-  top: 100px;
-  @include md {
-    height: 500px;
-  }
-}
+// .img-pd {
+//   background: url('../assets/img/borobudur.png');
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   height: 500px;
+//   display: flex;
+//   flex-flow: nowrap column;
+//   position: relative;
+//   top: 100px;
+//   @include md {
+//     height: 500px;
+//   }
+// }
 
 .boxrules-pd {
   position: relative;
-  top: -80px;
+  top: 15px;
+  @include sm {
+    top: 30px;
+  }
 }
 
 .pd-story {
   font-family: 'Montserrat', sans-serif;
   text-align: justify;
-  margin: 0 40px;
+  margin: 80px 40px 0;
   @include md {
-    margin: 0 10px;
+    margin: 80px 10px;
   }
 }
 
