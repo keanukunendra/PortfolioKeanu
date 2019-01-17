@@ -5,6 +5,8 @@
 
 .image-gallery-image {
   height: 500px;
+  position: relative;
+  bottom: 100px;
   @include sm {
     height: 250px;
   }
