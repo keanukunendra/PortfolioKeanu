@@ -1,7 +1,7 @@
 #hero {
   height: 100vh;
-  @include sm {
-    height: 70vh;
+  @include md {
+    height: 50vh;
   }
 }
 
@@ -35,7 +35,7 @@
   position: absolute;
   bottom: 0;
   display: flex;
-  @include sm {
+  @include md {
     width: 100%;
   }
 }
@@ -58,9 +58,9 @@
     background-color: hsla(0, 0%, 100%, 0.3);
     border-top: 4px solid white;
   }
-  @include sm {
-    width: 100%;
-    font-size: 12px;
-    padding: 12px 0;
+  @include md {
+    width: 50%;
+    font-size: 18px;
+    padding: 18px 0;
   }
 }
