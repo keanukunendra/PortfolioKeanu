@@ -71,101 +71,101 @@ const AboutUs = () => {
         <p className="header-team">Our Team</p>
         <div className="ourprofile flex flex-center">
           <div className="cardprofile">
-            <Card className="card1 profile">
-              <CardImg top width="100%" src={Image4} alt="Miftah" />
+            <Card className="cardphoto profile">
+              <CardImg className="cardimg" top width="100%" src={Image4} alt="Miftah" />
               <CardBody className="cardbody">
-                <CardTitle><br></br>Miftah MD</CardTitle>
-                <CardSubtitle>BackEnd</CardSubtitle>
+                <CardTitle className="cardtitle">Miftah MD</CardTitle>
+                <CardSubtitle className="cardsubtitle">BackEnd</CardSubtitle>
               </CardBody>
             </Card>
           </div>
 
           <div className="cardprofile">
-              <Card className="card1 profile">
-                <CardImg top width="100%" src={Image5} alt="Miftah" />
+              <Card className="cardphoto profile">
+                <CardImg className="cardimg" top width="100%" src={Image5} alt="Eko" />
                 <CardBody className="cardbody">
-                  <CardTitle><br></br>Eko Satria</CardTitle>
-                  <CardSubtitle>BackEnd</CardSubtitle>
+                  <CardTitle className="cardtitle">Eko Satria</CardTitle>
+                  <CardSubtitle className="cardsubtitle">BackEnd</CardSubtitle>
                 </CardBody>
               </Card>
             </div>
 
             <div className="cardprofile">
-              <Card className="card1 profile">
-                <CardImg top width="100%" src={Image6} alt="Miftah" />
+              <Card className="cardphoto profile">
+                <CardImg className="cardimg" top width="100%" src={Image6} alt="Husnul" />
                 <CardBody className="cardbody">
-                  <CardTitle><br></br>Husnul Fadhilah</CardTitle>
-                  <CardSubtitle>BackEnd</CardSubtitle>
-                </CardBody>
-              </Card>
-            </div>
-
-          <div className="cardprofile">
-              <Card className="card1 profile">
-                <CardImg top width="100%" src={Image7} alt="Miftah" />
-                <CardBody className="cardbody">
-                  <CardTitle><br></br>Fadli Ramadhan</CardTitle>
-                  <CardSubtitle>BackEnd</CardSubtitle>
-                </CardBody>
-              </Card>
-            </div>
-
-            <div className="cardprofile">
-              <Card className="card1 profile">
-                <CardImg top width="100%" src={Image8} alt="Miftah" />
-                <CardBody className="cardbody">
-                  <CardTitle><br></br>Rizal Fahmi</CardTitle>
-                  <CardSubtitle>BackEnd</CardSubtitle>
-                </CardBody>
-              </Card>
-            </div>
-          
-            <div className="cardprofile">
-              <Card className="card1 profile">
-                <CardImg top width="100%" src={Image9} alt="Miftah" />
-                <CardBody className="cardbody">
-                  <CardTitle><br></br>Yuhanas Yulianto</CardTitle>
-                  <CardSubtitle>FrontEnd</CardSubtitle>
+                  <CardTitle className="cardtitle">Husnul Fadhilah</CardTitle>
+                  <CardSubtitle className="cardsubtitle">BackEnd</CardSubtitle>
                 </CardBody>
               </Card>
             </div>
 
           <div className="cardprofile">
-              <Card className="card1 profile">
-                <CardImg top width="100%" src={Image10} alt="Miftah" />
+              <Card className="cardphoto profile">
+                <CardImg className="cardimg" top width="100%" src={Image7} alt="Fadli" />
                 <CardBody className="cardbody">
-                  <CardTitle><br></br>Irsal Firansyah</CardTitle>
-                  <CardSubtitle>FrontEnd</CardSubtitle>
+                  <CardTitle className="cardtitle">Fadli Ramadhan</CardTitle>
+                  <CardSubtitle className="cardsubtitle">BackEnd</CardSubtitle>
                 </CardBody>
               </Card>
             </div>
 
             <div className="cardprofile">
-              <Card className="card1 profile">
-                <CardImg top width="100%" src={Image11} alt="Miftah" />
+              <Card className="cardphoto profile">
+                <CardImg className="cardimg" top width="100%" src={Image8} alt="Rizal" />
                 <CardBody className="cardbody">
-                  <CardTitle><br></br>Tri Rahayu</CardTitle>
-                  <CardSubtitle>FrontEnd</CardSubtitle>
-                </CardBody>
-              </Card>
-            </div>
-
-            <div className="cardprofile">
-              <Card className="card1 profile">
-                <CardImg top width="100%" src={Image12} alt="Miftah" />
-                <CardBody className="cardbody">
-                  <CardTitle><br></br>Anas Aditya</CardTitle>
-                  <CardSubtitle>FrontEnd</CardSubtitle>
+                  <CardTitle className="cardtitle">Rizal Fahmi</CardTitle>
+                  <CardSubtitle className="cardsubtitle">BackEnd</CardSubtitle>
                 </CardBody>
               </Card>
             </div>
           
             <div className="cardprofile">
-              <Card className="card1 profile">
-                <CardImg top width="100%" src={Image13} alt="Miftah" />
+              <Card className="cardphoto profile">
+                <CardImg className="cardimg" top width="100%" src={Image9} alt="Yuhanas" />
                 <CardBody className="cardbody">
-                  <CardTitle><br></br>Keanu Kunendra</CardTitle>
-                  <CardSubtitle>FrontEnd</CardSubtitle>
+                  <CardTitle className="cardtitle">Yuhanas Yulianto</CardTitle>
+                  <CardSubtitle className="cardsubtitle">FrontEnd</CardSubtitle>
+                </CardBody>
+              </Card>
+            </div>
+
+          <div className="cardprofile">
+              <Card className="cardphoto profile">
+                <CardImg className="cardimg" top width="100%" src={Image10} alt="Irsal" />
+                <CardBody className="cardbody">
+                  <CardTitle className="cardtitle">Irsal Firansyah</CardTitle>
+                  <CardSubtitle className="cardsubtitle">FrontEnd</CardSubtitle>
+                </CardBody>
+              </Card>
+            </div>
+
+            <div className="cardprofile">
+              <Card className="cardphoto profile">
+                <CardImg className="cardimg" top width="100%" src={Image11} alt="Tri" />
+                <CardBody className="cardbody">
+                  <CardTitle className="cardtitle">Tri Rahayu</CardTitle>
+                  <CardSubtitle className="cardsubtitle">FrontEnd</CardSubtitle>
+                </CardBody>
+              </Card>
+            </div>
+
+            <div className="cardprofile">
+              <Card className="cardphoto profile">
+                <CardImg className="cardimg" top width="100%" src={Image12} alt="Anas" />
+                <CardBody className="cardbody">
+                  <CardTitle className="cardtitle">Anas Aditya</CardTitle>
+                  <CardSubtitle className="cardsubtitle">FrontEnd</CardSubtitle>
+                </CardBody>
+              </Card>
+            </div>
+          
+            <div className="cardprofile">
+              <Card className="cardphoto profile">
+                <CardImg className="cardimg" top width="100%" src={Image13} alt="Keanu" />
+                <CardBody className="cardbody">
+                  <CardTitle className="cardtitle">Keanu Kunendra</CardTitle>
+                  <CardSubtitle className="cardsubtitle">FrontEnd</CardSubtitle>
                 </CardBody>
               </Card>
             </div>
