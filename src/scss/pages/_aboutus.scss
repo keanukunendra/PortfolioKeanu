@@ -31,10 +31,8 @@ p.description {
   width: 800px;
   text-align: center;
   margin-top: 20px;
-  // @include md{
-  //   margin: 20px 50px 0;
-  // }
-  @include lga{
+
+  @include lga {
     margin: 20px 50px 0;
   }
 }
@@ -119,37 +117,23 @@ p.description {
     font-weight: bold;
     font-family: 'Montserrat'sans-serif;
     font-size: 20px;
-    // padding: 10px 100px 10px 0;
-    // text-align: center;
     width: auto;
-    // @include md{
-    //   // padding: 10px 150px 10px 0;
-    //   text-align: center;
-    // }
-    // @include lga{
-    //   text-align: center;
-    // }
   }
 
   .descrip {
     padding: 15px 20px;
     color: black;
   }
-
-  // @include lga{
-  //   text-align: center;
-  // }
-  // @include md{
-  //   text-align: center;
-  // }
 }
 
 .aboutkrama {
   padding: 50px 0 150px 0;
-  @include lga{
+
+  @include lga {
     padding: 50px 0 110px 0;
   }
-  @include sm{
+
+  @include sm {
     padding: 50px 0 50px 0;
   }
 }
@@ -177,16 +161,10 @@ p.description {
 
   .cardprofile {
     padding: 15px;
+
     @include lga {
       padding: 10px;
     }
-    // @include sm{
-    //   display: none;
-    //   .cardimg{
-
-    //     background: url('../../assets/img/miftah.jpg');
-    //   }
-    // }
   }
 
   .cardtitle {
