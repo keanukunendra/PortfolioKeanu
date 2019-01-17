@@ -51,3 +51,5 @@ class BoxRules extends Component {
 }
 
 export default BoxRules;
+
+
