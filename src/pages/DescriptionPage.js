@@ -1,11 +1,13 @@
 import React, { Component } from "react";
 import BoxRules from "../components/BoxRules";
-import ControlledCarousel from "../components/ControlledCarousel" ;
+import ControlledCarousel from "../components/ControlledCarousel";
 import { listContext } from "../App";
 
 class DescriptionPage extends Component {
   render() {
     const id = this.props.match.params.item_id;
+    console.log(id);
+
     return (
       <listContext.Consumer>
         {context =>
@@ -24,7 +26,14 @@ class DescriptionPage extends Component {
                 </section>
 
                 <section>
-                  <ControlledCarousel pictureplaces={data.pictureplaces} />
+                  <ControlledCarousel
+                    category={context.category}
+                    pictures={
+                      context.category === "places"
+                        ? data.pictureplaces
+                        : data.pictureevents
+                    }
+                  />
                   <div className="boxrules-pd">
                     <BoxRules rules={data.rules} />
                   </div>

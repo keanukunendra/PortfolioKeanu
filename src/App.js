@@ -18,28 +18,20 @@ export const listContext = React.createContext();
 
 class App extends Component {
   state = {
-    list: []
+    category: "places"
   };
 
-  componentDidMount() {
-    axios.get("https://staging-krama.herokuapp.com/api/v1/places").then(res => {
-      this.setState(() => ({
-        list: res.data.slice(0, 8)
-      }));
-    });
-  }
+  async componentDidMount() {
+    const placeList = await axios
+      .get("https://staging-krama.herokuapp.com/api/v1/places")
+      .then(res => res.data.slice(0, 8));
 
-  componentDidUpdate(prevProps, prevState, snapshot) {
-    if (prevState.category !== this.state.category) {
-      const category = this.state.category;
-      axios
-        .get("https://staging-krama.herokuapp.com/api/v1/" + category)
-        .then(res => {
-          this.setState({
-            list: res.data.slice(0, 8)
-          });
-        });
-    }
+    const eventList = await axios
+      .get("https://staging-krama.herokuapp.com/api/v1/events")
+      .then(res => res.data.slice(0, 8));
+
+    console.log("hit API on mounted");
+    this.setState({ placeList, eventList });
   }
 
   updateCategory = category => {
@@ -49,10 +41,17 @@ class App extends Component {
   };
 
   render() {
+    console.log(this.state);
     return (
       <listContext.Provider
         value={{
-          list: this.state.list,
+          category: this.state.category,
+          list:
+            this.state.category === "places"
+              ? this.state.placeList
+              : this.state.eventList,
+          placeList: this.state.placeList,
+          eventList: this.state.eventList,
           updateCategory: category => this.updateCategory(category)
         }}
       >
