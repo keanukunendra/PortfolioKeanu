@@ -18,7 +18,7 @@ export const listContext = React.createContext();
 
 class App extends Component {
   state = {
-    category: "places"
+    category: localStorage.getItem("category") || "places"
   };
 
   async componentDidMount() {
@@ -30,14 +30,15 @@ class App extends Component {
       .get("https://staging-krama.herokuapp.com/api/v1/events")
       .then(res => res.data.slice(0, 8));
 
-    console.log("hit API on mounted");
     this.setState({ placeList, eventList });
+    debugger;
   }
 
   updateCategory = category => {
     this.setState({
       category
     });
+    localStorage.setItem("category", category);
   };
 
   render() {
