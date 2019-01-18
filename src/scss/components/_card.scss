@@ -16,6 +16,8 @@
 
 .card-img-top {
   height: 200px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
 }
 
 .card-body {
@@ -40,6 +42,5 @@
   bottom: 14px;
   font-weight: 600;
   font-size: 14px;
-  color: #313E64;
+  color: #313e64;
 }
-

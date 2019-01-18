@@ -6,7 +6,7 @@ import { listContext } from "../App";
 
 class Catalogue extends Component {
   state = {
-    category: ""
+    category: "places"
   };
 
   componentDidMount() {
@@ -47,7 +47,15 @@ class Catalogue extends Component {
                         to={`/description/${category}/${item.id}`}
                         key={item.id}
                       >
-                        <Card title={item.title} desc={item.desc} />
+                        <Card
+                          title={item.title}
+                          desc={item.desc}
+                          thumbnail={
+                            context.category === "events"
+                              ? item.pictureevents[0].picture.url
+                              : item.pictureplaces[0].image.url
+                          }
+                        />
                       </Link>
                     );
                   })

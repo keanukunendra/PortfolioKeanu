@@ -3,10 +3,10 @@ import ImageGallery from "react-image-gallery";
 
 class ControlledCarousel extends Component {
   render() {
-    const { pictureplaces } = this.props;
+    const { category, pictures } = this.props;
 
-    const imageLoop = pictureplaces.map(e => ({
-      original: e.image.url
+    const imageLoop = pictures.map(e => ({
+      original: category === "places" ? e.image.url : e.picture.url
     }));
 
     return (
