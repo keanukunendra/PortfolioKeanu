@@ -6,7 +6,6 @@ import { listContext } from "../App";
 class DescriptionPage extends Component {
   render() {
     const id = this.props.match.params.item_id;
-    console.log(id);
 
     return (
       <listContext.Consumer>
