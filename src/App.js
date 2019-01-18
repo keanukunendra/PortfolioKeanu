@@ -31,10 +31,9 @@ class App extends Component {
       .then(res => res.data.slice(0, 8));
 
     this.setState({ placeList, eventList });
-    debugger;
   }
 
-  updateCategory = category => {
+  updateCategory = (category = "places") => {
     this.setState({
       category
     });
