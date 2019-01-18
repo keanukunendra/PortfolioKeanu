@@ -1,0 +1,111 @@
+.box-rules-flex {
+  display: flex;
+  justify-content: center;
+}
+
+.box-rules {
+  display: flex;
+  flex-flow: column nowrap;
+  box-shadow: 0 4px 6px 0 rgba(47, 47, 47, 0.1);
+  border: #aeb6c3;
+  width: 920px;
+  height: 250px;
+  padding: 0 80px;
+  border-radius: 10px;
+  background: white;
+  opacity: 0.9;
+  @include xl {
+    width: 700px;
+  }
+  @include lg {
+    width: 600px;
+  }
+  @include md {
+    width: 590px;
+  }
+  @include sm {
+    width: 400px;
+    height: 220px;
+    padding: 0 40px;
+  }
+}
+
+.box-rules-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 50px 0 20px;
+  @include md {
+    padding: 40px 0 20px;
+  }
+  @include sm {
+    padding: 30px 0 20px;
+  }
+}
+
+.icon-flex {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 350px;
+  padding-bottom: 40px;
+  @include sm {
+    width: 250px;
+  }
+}
+
+.icon-flex i {
+  width: 36px;
+  height: 36px;
+  margin-right: 15px;
+  @include sm {
+    margin-right: 0px;
+  }
+}
+
+.icon-rules-line {
+  border-top: 3px solid gainsboro;
+}
+
+.icon-rules-line p {
+  margin-top: 10px;
+}
+
+.box-rules-icon {
+  box-shadow: 0 2px 4px 0 rgba(47, 47, 47, 0.1);
+  border: #aeb6c3;
+}
+
+.box-rules-line {
+  border: solid 1px gainsboro;
+}
+
+.box-rules-p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  border-top: solid 4px gainsboro;
+  margin: 30px 0;
+  padding: 40px 0;
+}
+
+.box-hover-blue {
+  transition-duration: 0.5s;
+  color: blue;
+  transition-property: color, background;
+}
+
+.box-hover-blue:hover {
+  background: #3d4ff1;
+  color: white;
+}
+
+.box-hover-red {
+  transition-duration: 0.5s;
+  color: red;
+  transition-property: color, background;
+}
+
+.box-hover-red:hover {
+  background: #3d4ff1;
+  color: white;
+}

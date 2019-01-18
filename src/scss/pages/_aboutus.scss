@@ -1,0 +1,189 @@
+.head {
+  background-color: white;
+}
+
+.header-img {
+  background: url('../assets/img/header1.jpg');
+  height: 620px;
+}
+
+.header-img .quote-about {
+  color: white;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 600;
+  max-width: 800px;
+}
+
+p.header-aboutus {
+  font-size: 50px;
+  text-align: center;
+}
+
+p.header-team {
+  font-size: 50px;
+  text-align: center;
+  padding: 50px 0 0;
+}
+
+p.description {
+  font-size: 18px;
+  width: 800px;
+  text-align: center;
+  margin-top: 20px;
+
+  @include lga {
+    margin: 20px 50px 0;
+  }
+}
+
+.profile {
+  img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin: 10px 50px;
+    align-items: center;
+  }
+}
+
+.box-icon {
+  position: relative;
+  bottom: 30%;
+  margin: 50px;
+  background-color: white;
+  width: 300px;
+  height: 350px;
+  box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  .icon-etiquette {
+    padding: 30px 100px 10px 100px;
+
+    @include md {
+      padding: 30px 100px 10px 95px;
+    }
+  }
+
+  .icon-prohib {
+    padding: 30px 110px 20px 110px;
+
+    @include md {
+      padding: 30px 110px 2px 95px;
+    }
+  }
+
+  .icon-explore {
+    padding: 50px 85px 30px 85px;
+
+    @include md {
+      padding: 50px 85px 10px 80px;
+
+      img {
+        width: 90px;
+      }
+    }
+  }
+
+  @include xl {
+    margin: 15px;
+  }
+
+  @include md {
+    margin: 30px;
+    width: 250px;
+    height: 250px;
+    font-size: 10px;
+
+    img {
+      width: 60px;
+    }
+  }
+
+  @include sm {
+    margin: 15px;
+  }
+
+  @include lga {
+    margin: 10px;
+  }
+}
+
+.icontext {
+  text-align: center;
+
+
+  .title {
+    font-weight: bold;
+    font-family: 'Montserrat'sans-serif;
+    font-size: 20px;
+    width: auto;
+  }
+
+  .descrip {
+    padding: 15px 20px;
+    color: black;
+  }
+}
+
+.aboutkrama {
+  padding: 50px 0 150px 0;
+
+  @include lga {
+    padding: 50px 0 110px 0;
+  }
+
+  @include sm {
+    padding: 50px 0 50px 0;
+  }
+}
+
+.cardkrama {
+  background-color: $blue;
+  height: 330px;
+
+  @include md {
+    height: auto;
+  }
+
+  @include lg {
+    height: auto;
+  }
+
+  @include xl {
+    height: auto;
+  }
+}
+
+.ourprofile {
+  padding: 20px;
+
+
+  .cardprofile {
+    padding: 15px;
+
+    @include lga {
+      padding: 10px;
+    }
+  }
+
+  .cardtitle {
+    font-size: 20px;
+  }
+
+  .cardsubtitle {
+    font-size: 20px;
+  }
+
+  .cardphoto {
+    height: 250px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  .cardbody {
+    text-align: center;
+    background-color: $blue;
+    color: white;
+    padding: 10px 10px 10px 10px;
+  }
+}

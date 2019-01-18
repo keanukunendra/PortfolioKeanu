@@ -1,0 +1,24 @@
+.image-gallery {
+  position: relative;
+  top: 100px;
+}
+
+.image-gallery-image {
+  height: 500px;
+  position: relative;
+  bottom: 100px;
+  @include sm {
+    height: 250px;
+  }
+}
+
+.image-gallery-bullets {
+  position: relative;
+  top: 390px;
+  @include md {
+    top: 310px;
+  }
+  @include sm {
+    top: 160px;
+  }
+}

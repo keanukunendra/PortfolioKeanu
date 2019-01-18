@@ -1,0 +1,22 @@
+// Definisikan style umum
+*{
+  box-sizing: border-box;
+}
+html {
+  font-family: $font;
+  color: $dark-grey;
+  background-color: $light-grey; 
+}
+
+.shadow {
+  box-shadow: 0 5px 10px -5px #9b9b9b;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.icon {
+  font-size: 30px;
+}

@@ -1,0 +1,85 @@
+.navbar {
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  padding: 0 60px;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .logo {
+    box-sizing: border-box;
+    font-family: "Roboto Slab", serif;
+    font-size: 36px;
+    flex-basis: 15%;
+    @include md {
+      font-size: 24px;
+      padding: 20px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  .navigation {
+    height: 100%;
+    .menu {
+      text-align: center;
+      padding: 22px 24px;
+      box-sizing: border-box;
+      border-bottom: 4px solid transparent;
+      outline: none;
+      transition: all 0.3s ease-in;
+      &:hover {
+        border-bottom: 4px solid rgba($blue, 0.7);
+      }
+      &.active {
+        border-bottom: 4px solid $blue;
+      }
+      @include md {
+        width: 100%;
+        transition: all 0.1s ease;
+        border-bottom: none;
+        &:hover {
+          background-color: rgba($blue, 0.7);
+          color: white;
+          border-bottom: none;
+        }
+        &.active {
+          border-bottom: none;
+        }
+      }
+    }
+    @include md {
+      flex-direction: column;
+      width: 100%;
+      &.hidden {
+        display: none;
+      }
+    }
+  }
+  @include md {
+    flex-direction: column;
+    padding: 0;
+  }
+}
+
+.humberger {
+  display: none;
+  span {
+    display: block;
+    width: 25px;
+    height: 2px;
+    margin-bottom: 8px;
+    background-color: $grey;
+    transition: all 0.1s ease;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  @include md {
+    display: block;
+  }
+}

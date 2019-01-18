@@ -1,0 +1,16 @@
+//import variable & base style
+@import "base/variable", "base/normalize", "base/reset", "base/base",
+  "base/devices", "components/typography";
+
+//import komponen
+@import "components/navbar", "components/hero", "components/card",
+  "components/footer", "components/box-rules", "components/carousel";
+
+//import pages
+@import "pages/description-page", "pages/aboutus", "pages/contact";
+
+//import layout
+@import "layout/grid";
+
+//import style halaman
+
