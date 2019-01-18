@@ -1,7 +1,8 @@
 .card {
   width: 245px;
   height: 380px;
-  margin-bottom: 60px;
+  // margin-bottom: 60px;
+  margin: 0 10px 60px;
   position: relative;
   display: -ms-flexbox;
   display: flex;
@@ -12,6 +13,10 @@
   background-clip: border-box;
   border: none;
   border-radius: 4px;
+  @include sm {
+    width: 70%;
+    margin: 0 auto;
+  }
 }
 
 .card-img-top {

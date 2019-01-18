@@ -15,8 +15,10 @@
 .image-gallery-bullets {
   position: relative;
   top: 390px;
+  @include md {
+    top: 310px;
+  }
   @include sm {
-    position: top;
     top: 160px;
   }
 }
